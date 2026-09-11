@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Paper Market Portfolio</title><link rel="stylesheet" href="assets/style.css"></head><body><header><h1>Paper Market Portfolio</h1><p class="subtitle">Two clearly separated trading simulations</p><p class="updated" id="updated"></p></header><main><section id="tab-portfolio" class="tab-panel active">
+    <div class="paper-banner"><strong>PAPER PORTFOLIO - SIMULATION ONLY</strong><span>No real money, brokerage account, or real trades.</span></div>
+    <div class="portfolio-switch" id="portfolio-switch"></div>
+    <h2 id="portfolio-title"></h2>
+    <div class="portfolio-stats" id="portfolio-stats"></div>
+    <p class="target-note" id="target-note"></p>
+    <h2>Open positions</h2>
+    <div class="table-wrap"><table id="positions"><thead><tr><th>Symbol</th><th>Quantity</th><th>Average</th><th>Last</th><th>Value</th><th>Gain/loss</th><th>Risk</th></tr></thead><tbody></tbody></table></div>
+    <h2>Simulated transactions</h2>
+    <div class="table-wrap"><table id="transactions"><thead><tr><th>Time (UTC)</th><th>Side</th><th>Symbol</th><th>Quantity</th><th>Price</th><th>Notional</th><th>Reason</th></tr></thead><tbody></tbody></table></div>
+    <p class="pricing-note" id="pricing-note"></p>
+  </section></main><footer><p>Simulation only. No real trades or money. Quotes may be delayed and results exclude spread, slippage, fees and tax.</p></footer><script src="assets/app.js"></script></body></html>
