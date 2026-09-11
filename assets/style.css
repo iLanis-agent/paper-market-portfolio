@@ -78,3 +78,41 @@ footer a { color: var(--accent); }
 .portfolio-switch { display:flex; gap:8px; margin:0 0 8px; }
 .portfolio-choice { background:var(--panel); color:var(--text); border:1px solid var(--border); border-radius:999px; padding:7px 13px; cursor:pointer; }
 .portfolio-choice.active { border-color:var(--accent); background:#13233a; }
+@media (max-width: 520px) {
+  body { padding: 12px 10px 24px; line-height: 1.25; }
+  header h1 { font-size: 21px; }
+  .subtitle, .updated { margin-top: 2px; font-size: 11px; }
+  .paper-banner { padding: 8px 10px; margin: 7px 0 8px; gap: 1px; }
+  .paper-banner strong { font-size: 13px; }
+  .paper-banner span, .target-note, .pricing-note { font-size: 10px; }
+  .portfolio-switch { margin: 0 0 4px; }
+  .portfolio-choice { padding: 4px 9px; font-size: 11px; }
+  #portfolio-title { font-size: 14px; margin: 8px 0 5px; }
+  .portfolio-stats { grid-template-columns: 1fr 1fr; gap: 5px; }
+  .stat { padding: 6px 8px; }
+  .stat span { font-size: 8px; }
+  .stat strong { font-size: 14px; margin-top: 1px; }
+  .target-note { margin: 5px 0; }
+  h2 { font-size: 14px; margin: 8px 0 4px; }
+  .table-wrap { overflow: visible; }
+  table { font-size: 10px; table-layout: fixed; }
+  th, td { padding: 4px 5px; word-break: normal; }
+  th { font-size: 8px; }
+  .status-note { font-size: 8px; margin-top: 1px; }
+  #positions th:nth-child(2), #positions td:nth-child(2),
+  #positions th:nth-child(3), #positions td:nth-child(3),
+  #positions th:nth-child(4), #positions td:nth-child(4),
+  #positions th:nth-child(7), #positions td:nth-child(7) { display:none; }
+  #positions th:nth-child(1) { width:42%; }
+  #positions th:nth-child(5), #positions th:nth-child(6) { width:29%; }
+  #transactions th:nth-child(1), #transactions td:nth-child(1),
+  #transactions th:nth-child(4), #transactions td:nth-child(4),
+  #transactions th:nth-child(5), #transactions td:nth-child(5),
+  #transactions th:nth-child(7), #transactions td:nth-child(7) { display:none; }
+  #transactions th:nth-child(2) { width:25%; }
+  #transactions th:nth-child(3) { width:35%; }
+  #transactions th:nth-child(6) { width:40%; }
+  .badge { padding: 1px 5px; font-size: 8px; }
+  .pricing-note { margin: 5px 0; }
+  footer { margin-top: 8px; padding-top: 7px; font-size: 9px; }
+}
