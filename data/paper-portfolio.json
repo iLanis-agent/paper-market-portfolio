@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11T09:03:23.274436Z",
+  "updated_at": "2026-09-11T10:56:53.342452Z",
   "label": "PAPER PORTFOLIO - SIMULATION ONLY",
   "portfolios": [
     {
@@ -19,10 +19,10 @@
           "name": "ProShares UltraPro QQQ",
           "qty": 6.393862,
           "avg_price": 70.38,
-          "last_price": 70.51,
-          "price_as_of": "2026-09-11T09:03:17Z",
-          "market_value": 450.83,
-          "unrealized_pl": 0.83,
+          "last_price": 70.46,
+          "price_as_of": "2026-09-11T10:56:47Z",
+          "market_value": 450.51,
+          "unrealized_pl": 0.51,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TQQQ?interval=1m&range=1d&includePrePost=true",
           "risk": "3x daily leveraged Nasdaq-100 exposure; path dependence and fast losses.",
           "market_state": "pre-market"
@@ -32,10 +32,10 @@
           "name": "Direxion Daily Semiconductor Bull 3X Shares",
           "qty": 2.950847,
           "avg_price": 118.61,
-          "last_price": 118.7258,
-          "price_as_of": "2026-09-11T09:03:04Z",
-          "market_value": 350.34,
-          "unrealized_pl": 0.34,
+          "last_price": 118.3094,
+          "price_as_of": "2026-09-11T10:54:52Z",
+          "market_value": 349.11,
+          "unrealized_pl": -0.89,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SOXL?interval=1m&range=1d&includePrePost=true",
           "risk": "3x daily leveraged semiconductor exposure; high volatility and decay.",
           "market_state": "pre-market"
@@ -46,7 +46,7 @@
           "qty": 20.638557,
           "avg_price": 9.6906,
           "last_price": 9.69,
-          "price_as_of": "2026-09-11T09:03:08Z",
+          "price_as_of": "2026-09-11T10:56:51Z",
           "market_value": 199.99,
           "unrealized_pl": -0.01,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLL?interval=1m&range=1d&includePrePost=true",
