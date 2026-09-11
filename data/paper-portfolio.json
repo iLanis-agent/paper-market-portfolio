@@ -1,0 +1,164 @@
+{
+  "updated_at": "2026-09-11T08:38:25Z",
+  "label": "PAPER PORTFOLIO - SIMULATION ONLY",
+  "portfolios": [
+    {
+      "id": "usd",
+      "label": "US HIGH-RISK PAPER PORTFOLIO",
+      "currency": "USD",
+      "symbol": "$",
+      "starting_cash": 1000,
+      "cash": 0,
+      "target": 10000,
+      "target_date": "2026-09-18",
+      "target_note": "Stretch goal, not a forecast. Reaching 10x in one week would require extreme risk and is very unlikely.",
+      "pricing_note": "Initial fills use fractional shares and indicative Yahoo Finance 1-minute quotes observed before the US market open. This simulation is not a brokerage fill and excludes spread, slippage, fees, taxes, and financing effects.",
+      "positions": [
+        {
+          "symbol": "TQQQ",
+          "name": "ProShares UltraPro QQQ",
+          "qty": 6.393862,
+          "avg_price": 70.38,
+          "last_price": 70.38,
+          "price_as_of": "2026-09-11T08:36:40Z",
+          "market_value": 450,
+          "unrealized_pl": 0,
+          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TQQQ?interval=1m&range=1d&includePrePost=true",
+          "risk": "3x daily leveraged Nasdaq-100 exposure; path dependence and fast losses."
+        },
+        {
+          "symbol": "SOXL",
+          "name": "Direxion Daily Semiconductor Bull 3X Shares",
+          "qty": 2.950847,
+          "avg_price": 118.61,
+          "last_price": 118.61,
+          "price_as_of": "2026-09-11T08:36:31Z",
+          "market_value": 350,
+          "unrealized_pl": 0,
+          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SOXL?interval=1m&range=1d&includePrePost=true",
+          "risk": "3x daily leveraged semiconductor exposure; high volatility and decay."
+        },
+        {
+          "symbol": "TSLL",
+          "name": "Direxion Daily TSLA Bull 2X Shares",
+          "qty": 20.638557,
+          "avg_price": 9.6906,
+          "last_price": 9.6906,
+          "price_as_of": "2026-09-11T08:36:21Z",
+          "market_value": 200,
+          "unrealized_pl": 0,
+          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLL?interval=1m&range=1d&includePrePost=true",
+          "risk": "2x daily leveraged single-stock exposure; extreme concentration risk."
+        }
+      ],
+      "transactions": [
+        {
+          "ts": "2026-09-11T08:36:40Z",
+          "side": "BUY",
+          "symbol": "TQQQ",
+          "qty": 6.393862,
+          "price": 70.38,
+          "notional": 450,
+          "reason": "High-risk paper allocation toward leveraged Nasdaq exposure."
+        },
+        {
+          "ts": "2026-09-11T08:36:31Z",
+          "side": "BUY",
+          "symbol": "SOXL",
+          "qty": 2.950847,
+          "price": 118.61,
+          "notional": 350,
+          "reason": "High-risk paper allocation toward leveraged semiconductor exposure."
+        },
+        {
+          "ts": "2026-09-11T08:36:21Z",
+          "side": "BUY",
+          "symbol": "TSLL",
+          "qty": 20.638557,
+          "price": 9.6906,
+          "notional": 200,
+          "reason": "Smallest sleeve; leveraged TSLA exposure for upside convexity."
+        }
+      ]
+    },
+    {
+      "id": "ils",
+      "label": "TASE PAPER PORTFOLIO",
+      "currency": "ILS",
+      "symbol": "₪",
+      "starting_cash": 1000,
+      "cash": 0,
+      "target": 2000,
+      "target_date": "2026-09-18",
+      "target_note": "Stretch goal, not a forecast. Doubling in one week would require extreme risk and is unlikely. This portfolio is tracked separately from the USD portfolio.",
+      "pricing_note": "Initial fills use fractional shares and the latest available Yahoo Finance TASE quotes, quoted in agorot and converted to shekels. The TASE was closed when seeded. Simulation excludes spread, slippage, fees, taxes, and currency effects.",
+      "positions": [
+        {
+          "symbol": "TEVA.TA",
+          "name": "Teva Pharmaceutical Industries",
+          "qty": 3.597122,
+          "avg_price": 111.2,
+          "last_price": 111.2,
+          "price_as_of": "2026-09-10T14:29:55Z",
+          "market_value": 400,
+          "unrealized_pl": 0,
+          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TEVA.TA?interval=1m&range=1d&includePrePost=true",
+          "risk": "Single-stock pharmaceutical risk; US dual listing and event sensitivity."
+        },
+        {
+          "symbol": "NICE.TA",
+          "name": "NICE Ltd.",
+          "qty": 0.998004,
+          "avg_price": 300.6,
+          "last_price": 300.6,
+          "price_as_of": "2026-09-10T14:24:01Z",
+          "market_value": 300,
+          "unrealized_pl": 0,
+          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NICE.TA?interval=1m&range=1d&includePrePost=true",
+          "risk": "Concentrated software stock; earnings and valuation sensitivity."
+        },
+        {
+          "symbol": "TASE.TA",
+          "name": "Tel Aviv Stock Exchange Ltd.",
+          "qty": 2.311248,
+          "avg_price": 129.8,
+          "last_price": 129.8,
+          "price_as_of": "2026-09-10T14:27:23Z",
+          "market_value": 300,
+          "unrealized_pl": 0,
+          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TASE.TA?interval=1m&range=1d&includePrePost=true",
+          "risk": "Concentrated exposure to Israeli capital-market activity and regulation."
+        }
+      ],
+      "transactions": [
+        {
+          "ts": "2026-09-11T08:38:25Z",
+          "side": "BUY",
+          "symbol": "TEVA.TA",
+          "qty": 3.597122,
+          "price": 111.2,
+          "notional": 400,
+          "reason": "High-risk TASE paper allocation; liquid dual-listed healthcare exposure."
+        },
+        {
+          "ts": "2026-09-11T08:38:25Z",
+          "side": "BUY",
+          "symbol": "NICE.TA",
+          "qty": 0.998004,
+          "price": 300.6,
+          "notional": 300,
+          "reason": "High-risk TASE paper allocation; concentrated technology exposure."
+        },
+        {
+          "ts": "2026-09-11T08:38:25Z",
+          "side": "BUY",
+          "symbol": "TASE.TA",
+          "qty": 2.311248,
+          "price": 129.8,
+          "notional": 300,
+          "reason": "High-risk TASE paper allocation; direct exchange-volume exposure."
+        }
+      ]
+    }
+  ]
+}
