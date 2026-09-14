@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T18:14:17.460977Z",
+  "updated_at": "2026-09-14T20:21:19.014553Z",
   "label": "PAPER PORTFOLIO - SIMULATION ONLY",
   "portfolios": [
     {
@@ -19,39 +19,39 @@
           "name": "ProShares UltraPro QQQ",
           "qty": 6.393862,
           "avg_price": 70.38,
-          "last_price": 70.21,
-          "price_as_of": "2026-09-14T18:14:11Z",
-          "market_value": 448.91,
-          "unrealized_pl": -1.09,
+          "last_price": 69.42,
+          "price_as_of": "2026-09-14T20:21:10Z",
+          "market_value": 443.86,
+          "unrealized_pl": -6.14,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TQQQ?interval=1m&range=1d&includePrePost=true",
           "risk": "3x daily leveraged Nasdaq-100 exposure; path dependence and fast losses.",
-          "market_state": "regular market"
+          "market_state": "after-hours"
         },
         {
           "symbol": "SOXL",
           "name": "Direxion Daily Semiconductor Bull 3X Shares",
           "qty": 2.950847,
           "avg_price": 118.61,
-          "last_price": 104.33,
-          "price_as_of": "2026-09-14T18:14:16Z",
-          "market_value": 307.86,
-          "unrealized_pl": -42.14,
+          "last_price": 101.97,
+          "price_as_of": "2026-09-14T20:21:17Z",
+          "market_value": 300.9,
+          "unrealized_pl": -49.1,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SOXL?interval=1m&range=1d&includePrePost=true",
           "risk": "3x daily leveraged semiconductor exposure; high volatility and decay.",
-          "market_state": "regular market"
+          "market_state": "after-hours"
         },
         {
           "symbol": "TSLL",
           "name": "Direxion Daily TSLA Bull 2X Shares",
           "qty": 20.638557,
           "avg_price": 9.6906,
-          "last_price": 9.4927,
-          "price_as_of": "2026-09-14T18:14:12Z",
-          "market_value": 195.92,
-          "unrealized_pl": -4.08,
+          "last_price": 9.36,
+          "price_as_of": "2026-09-14T20:20:51Z",
+          "market_value": 193.18,
+          "unrealized_pl": -6.82,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLL?interval=1m&range=1d&includePrePost=true",
           "risk": "2x daily leveraged single-stock exposure; extreme concentration risk.",
-          "market_state": "regular market"
+          "market_state": "after-hours"
         }
       ],
       "transactions": [
@@ -83,7 +83,7 @@
           "reason": "Smallest sleeve; leveraged TSLA exposure for upside convexity."
         }
       ],
-      "market_state_summary": "US instruments: regular market quotes"
+      "market_state_summary": "US instruments: after-hours quotes"
     },
     {
       "id": "ils",
