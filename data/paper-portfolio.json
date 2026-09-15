@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T16:11:25.218852Z",
+  "updated_at": "2026-09-15T17:12:05.813615Z",
   "label": "PAPER PORTFOLIO - SIMULATION ONLY",
   "portfolios": [
     {
@@ -19,10 +19,10 @@
           "name": "ProShares UltraPro QQQ",
           "qty": 6.393862,
           "avg_price": 70.38,
-          "last_price": 67.9,
-          "price_as_of": "2026-09-15T16:11:23Z",
-          "market_value": 434.14,
-          "unrealized_pl": -15.86,
+          "last_price": 68.045,
+          "price_as_of": "2026-09-15T17:12:04Z",
+          "market_value": 435.07,
+          "unrealized_pl": -14.93,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TQQQ?interval=1m&range=1d&includePrePost=true",
           "risk": "3x daily leveraged Nasdaq-100 exposure; path dependence and fast losses.",
           "market_state": "regular market"
@@ -32,10 +32,10 @@
           "name": "Direxion Daily Semiconductor Bull 3X Shares",
           "qty": 2.950847,
           "avg_price": 118.61,
-          "last_price": 101.1905,
-          "price_as_of": "2026-09-15T16:11:23Z",
-          "market_value": 298.6,
-          "unrealized_pl": -51.4,
+          "last_price": 101.32,
+          "price_as_of": "2026-09-15T17:12:05Z",
+          "market_value": 298.98,
+          "unrealized_pl": -51.02,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SOXL?interval=1m&range=1d&includePrePost=true",
           "risk": "3x daily leveraged semiconductor exposure; high volatility and decay.",
           "market_state": "regular market"
@@ -45,10 +45,10 @@
           "name": "Direxion Daily TSLA Bull 2X Shares",
           "qty": 20.638557,
           "avg_price": 9.6906,
-          "last_price": 9.4797,
-          "price_as_of": "2026-09-15T16:11:23Z",
-          "market_value": 195.65,
-          "unrealized_pl": -4.35,
+          "last_price": 9.3868,
+          "price_as_of": "2026-09-15T17:12:04Z",
+          "market_value": 193.73,
+          "unrealized_pl": -6.27,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLL?interval=1m&range=1d&includePrePost=true",
           "risk": "2x daily leveraged single-stock exposure; extreme concentration risk.",
           "market_state": "regular market"
