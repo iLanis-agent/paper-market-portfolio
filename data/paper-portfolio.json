@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T07:01:38.158770Z",
+  "updated_at": "2026-09-16T08:01:35.905052Z",
   "label": "PAPER PORTFOLIO - SIMULATION ONLY",
   "portfolios": [
     {
@@ -19,39 +19,39 @@
           "name": "ProShares UltraPro QQQ",
           "qty": 6.393862,
           "avg_price": 70.38,
-          "last_price": 68.0499,
-          "price_as_of": "2026-09-15T23:59:54Z",
-          "market_value": 435.1,
-          "unrealized_pl": -14.9,
+          "last_price": 68.73,
+          "price_as_of": "2026-09-16T08:01:33Z",
+          "market_value": 439.45,
+          "unrealized_pl": -10.55,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TQQQ?interval=1m&range=1d&includePrePost=true",
           "risk": "3x daily leveraged Nasdaq-100 exposure; path dependence and fast losses.",
-          "market_state": "market closed"
+          "market_state": "pre-market"
         },
         {
           "symbol": "SOXL",
           "name": "Direxion Daily Semiconductor Bull 3X Shares",
           "qty": 2.950847,
           "avg_price": 118.61,
-          "last_price": 102.46,
-          "price_as_of": "2026-09-15T23:59:45Z",
-          "market_value": 302.34,
-          "unrealized_pl": -47.66,
+          "last_price": 106.7,
+          "price_as_of": "2026-09-16T08:01:32Z",
+          "market_value": 314.86,
+          "unrealized_pl": -35.14,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SOXL?interval=1m&range=1d&includePrePost=true",
           "risk": "3x daily leveraged semiconductor exposure; high volatility and decay.",
-          "market_state": "market closed"
+          "market_state": "pre-market"
         },
         {
           "symbol": "TSLL",
           "name": "Direxion Daily TSLA Bull 2X Shares",
           "qty": 20.638557,
           "avg_price": 9.6906,
-          "last_price": 9.2,
-          "price_as_of": "2026-09-15T23:59:58Z",
-          "market_value": 189.87,
-          "unrealized_pl": -10.13,
+          "last_price": 9.31,
+          "price_as_of": "2026-09-16T08:01:34Z",
+          "market_value": 192.14,
+          "unrealized_pl": -7.86,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLL?interval=1m&range=1d&includePrePost=true",
           "risk": "2x daily leveraged single-stock exposure; extreme concentration risk.",
-          "market_state": "market closed"
+          "market_state": "pre-market"
         }
       ],
       "transactions": [
@@ -83,7 +83,7 @@
           "reason": "Smallest sleeve; leveraged TSLA exposure for upside convexity."
         }
       ],
-      "market_state_summary": "US instruments: market closed; latest after-hours quotes retained"
+      "market_state_summary": "US instruments: pre-market quotes"
     },
     {
       "id": "ils",
@@ -102,39 +102,39 @@
           "name": "Teva Pharmaceutical Industries",
           "qty": 3.597122,
           "avg_price": 111.2,
-          "last_price": 117.1,
-          "price_as_of": "2026-09-15T14:27:13Z",
-          "market_value": 421.22,
-          "unrealized_pl": 21.22,
+          "last_price": 119.6,
+          "price_as_of": "2026-09-16T07:46:23Z",
+          "market_value": 430.22,
+          "unrealized_pl": 30.22,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TEVA.TA?interval=1m&range=1d&includePrePost=true",
           "risk": "Single-stock pharmaceutical risk; US dual listing and event sensitivity.",
-          "market_state": "market closed"
+          "market_state": "regular market"
         },
         {
           "symbol": "NICE.TA",
           "name": "NICE Ltd.",
           "qty": 0.998004,
           "avg_price": 300.6,
-          "last_price": 315.6,
-          "price_as_of": "2026-09-15T14:27:40Z",
-          "market_value": 314.97,
-          "unrealized_pl": 14.97,
+          "last_price": 312.0,
+          "price_as_of": "2026-09-16T07:46:22Z",
+          "market_value": 311.38,
+          "unrealized_pl": 11.38,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NICE.TA?interval=1m&range=1d&includePrePost=true",
           "risk": "Concentrated software stock; earnings and valuation sensitivity.",
-          "market_state": "market closed"
+          "market_state": "regular market"
         },
         {
           "symbol": "TASE.TA",
           "name": "Tel Aviv Stock Exchange Ltd.",
           "qty": 2.311248,
           "avg_price": 129.8,
-          "last_price": 127.0,
-          "price_as_of": "2026-09-15T14:27:55Z",
-          "market_value": 293.53,
-          "unrealized_pl": -6.47,
+          "last_price": 130.2,
+          "price_as_of": "2026-09-16T07:45:46Z",
+          "market_value": 300.92,
+          "unrealized_pl": 0.92,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TASE.TA?interval=1m&range=1d&includePrePost=true",
           "risk": "Concentrated exposure to Israeli capital-market activity and regulation.",
-          "market_state": "market closed"
+          "market_state": "regular market"
         }
       ],
       "transactions": [
@@ -166,7 +166,7 @@
           "reason": "High-risk TASE paper allocation; direct exchange-volume exposure."
         }
       ],
-      "market_state_summary": "Tel Aviv Stock Exchange: closed; latest official close retained"
+      "market_state_summary": "Tel Aviv Stock Exchange: regular market quotes"
     }
   ]
 }
