@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T00:04:28.895667Z",
+  "updated_at": "2026-09-18T02:05:36.280940Z",
   "label": "PAPER PORTFOLIO - SIMULATION ONLY",
   "portfolios": [
     {
@@ -32,10 +32,10 @@
           "name": "Direxion Daily Semiconductor Bull 3X Shares",
           "qty": 2.950847,
           "avg_price": 118.61,
-          "last_price": 114.2975,
-          "price_as_of": "2026-09-17T23:59:51Z",
-          "market_value": 337.27,
-          "unrealized_pl": -12.73,
+          "last_price": 114.3,
+          "price_as_of": "2026-09-17T23:59:58Z",
+          "market_value": 337.28,
+          "unrealized_pl": -12.72,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SOXL?interval=1m&range=1d&includePrePost=true",
           "risk": "3x daily leveraged semiconductor exposure; high volatility and decay.",
           "market_state": "market closed"
