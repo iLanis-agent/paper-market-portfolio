@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T02:05:36.280940Z",
+  "updated_at": "2026-09-18T07:07:53.538780Z",
   "label": "PAPER PORTFOLIO - SIMULATION ONLY",
   "portfolios": [
     {
@@ -103,7 +103,7 @@
           "qty": 3.597122,
           "avg_price": 111.2,
           "last_price": 119.6,
-          "price_as_of": "2026-09-17T14:28:00Z",
+          "price_as_of": "2026-09-17T14:28:55Z",
           "market_value": 430.22,
           "unrealized_pl": 30.22,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TEVA.TA?interval=1m&range=1d&includePrePost=true",
@@ -116,7 +116,7 @@
           "qty": 0.998004,
           "avg_price": 300.6,
           "last_price": 327.1,
-          "price_as_of": "2026-09-17T14:27:00Z",
+          "price_as_of": "2026-09-17T14:27:14Z",
           "market_value": 326.45,
           "unrealized_pl": 26.45,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NICE.TA?interval=1m&range=1d&includePrePost=true",
@@ -129,7 +129,7 @@
           "qty": 2.311248,
           "avg_price": 129.8,
           "last_price": 147.4,
-          "price_as_of": "2026-09-17T14:26:00Z",
+          "price_as_of": "2026-09-17T14:26:31Z",
           "market_value": 340.68,
           "unrealized_pl": 40.68,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TASE.TA?interval=1m&range=1d&includePrePost=true",
