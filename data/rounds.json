@@ -1,0 +1,1497 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-09-20T17:32:00Z",
+  "rounds": [
+    {
+      "id": "round-1",
+      "label": "Round 1",
+      "status": "completed",
+      "started_at": "2026-09-11T08:38:25Z",
+      "ended_at": "2026-09-18T15:26:42.248084Z",
+      "strategy": "Two separate high-risk paper portfolios: leveraged US ETFs and concentrated TASE shares.",
+      "starting_point": [
+        {
+          "portfolio": "usd",
+          "currency": "USD",
+          "starting_cash": 1000,
+          "target": 10000,
+          "target_date": "2026-09-18"
+        },
+        {
+          "portfolio": "ils",
+          "currency": "ILS",
+          "starting_cash": 1000,
+          "target": 2000,
+          "target_date": "2026-09-18"
+        }
+      ],
+      "actions": [
+        {
+          "portfolio": "usd",
+          "ts": "2026-09-11T08:36:21Z",
+          "side": "BUY",
+          "symbol": "TSLL",
+          "qty": 20.638557,
+          "price": 9.6906,
+          "notional": 200,
+          "reason": "Smallest sleeve; leveraged TSLA exposure for upside convexity."
+        },
+        {
+          "portfolio": "usd",
+          "ts": "2026-09-11T08:36:31Z",
+          "side": "BUY",
+          "symbol": "SOXL",
+          "qty": 2.950847,
+          "price": 118.61,
+          "notional": 350,
+          "reason": "High-risk paper allocation toward leveraged semiconductor exposure."
+        },
+        {
+          "portfolio": "usd",
+          "ts": "2026-09-11T08:36:40Z",
+          "side": "BUY",
+          "symbol": "TQQQ",
+          "qty": 6.393862,
+          "price": 70.38,
+          "notional": 450,
+          "reason": "High-risk paper allocation toward leveraged Nasdaq exposure."
+        },
+        {
+          "portfolio": "ils",
+          "ts": "2026-09-11T08:38:25Z",
+          "side": "BUY",
+          "symbol": "TEVA.TA",
+          "qty": 3.597122,
+          "price": 111.2,
+          "notional": 400,
+          "reason": "High-risk TASE paper allocation; liquid dual-listed healthcare exposure."
+        },
+        {
+          "portfolio": "ils",
+          "ts": "2026-09-11T08:38:25Z",
+          "side": "BUY",
+          "symbol": "NICE.TA",
+          "qty": 0.998004,
+          "price": 300.6,
+          "notional": 300,
+          "reason": "High-risk TASE paper allocation; concentrated technology exposure."
+        },
+        {
+          "portfolio": "ils",
+          "ts": "2026-09-11T08:38:25Z",
+          "side": "BUY",
+          "symbol": "TASE.TA",
+          "qty": 2.311248,
+          "price": 129.8,
+          "notional": 300,
+          "reason": "High-risk TASE paper allocation; direct exchange-volume exposure."
+        }
+      ],
+      "marks": [
+        {
+          "ts": "2026-09-11T08:38:25Z",
+          "values": {
+            "usd": {
+              "equity": 1000.0,
+              "pnl": 0.0,
+              "pnl_pct": 0.0
+            },
+            "ils": {
+              "equity": 1000.0,
+              "pnl": 0.0,
+              "pnl_pct": 0.0
+            }
+          },
+          "commit": "e0f28bbff623295a2e978d905e0add8894f62130"
+        },
+        {
+          "ts": "2026-09-11T09:03:23.274436Z",
+          "values": {
+            "usd": {
+              "equity": 1001.16,
+              "pnl": 1.16,
+              "pnl_pct": 0.116
+            },
+            "ils": {
+              "equity": 1000.0,
+              "pnl": 0.0,
+              "pnl_pct": 0.0
+            }
+          },
+          "commit": "7c3d76d7f4235cfda7e091b1d5914aa4c94f917f"
+        },
+        {
+          "ts": "2026-09-11T10:56:53.342452Z",
+          "values": {
+            "usd": {
+              "equity": 999.61,
+              "pnl": -0.39,
+              "pnl_pct": -0.039
+            },
+            "ils": {
+              "equity": 1000.0,
+              "pnl": 0.0,
+              "pnl_pct": 0.0
+            }
+          },
+          "commit": "b8cb108474662ff42717b75e3e3d8b55548251ab"
+        },
+        {
+          "ts": "2026-09-11T11:57:27.549044Z",
+          "values": {
+            "usd": {
+              "equity": 998.66,
+              "pnl": -1.34,
+              "pnl_pct": -0.134
+            },
+            "ils": {
+              "equity": 1000.0,
+              "pnl": 0.0,
+              "pnl_pct": 0.0
+            }
+          },
+          "commit": "7ea9dd269fb2ceecf4d9c4451d299a33114bc890"
+        },
+        {
+          "ts": "2026-09-11T12:57:41.210158Z",
+          "values": {
+            "usd": {
+              "equity": 1015.87,
+              "pnl": 15.87,
+              "pnl_pct": 1.587
+            },
+            "ils": {
+              "equity": 1000.0,
+              "pnl": 0.0,
+              "pnl_pct": 0.0
+            }
+          },
+          "commit": "c6ab30acb4303692a34ee9707521df40a6364930"
+        },
+        {
+          "ts": "2026-09-11T14:00:46.400100Z",
+          "values": {
+            "usd": {
+              "equity": 1017.47,
+              "pnl": 17.47,
+              "pnl_pct": 1.747
+            },
+            "ils": {
+              "equity": 1000.0,
+              "pnl": 0.0,
+              "pnl_pct": 0.0
+            }
+          },
+          "commit": "82fafd5d47528fef2db23ac89f51a61e2b5642fd"
+        },
+        {
+          "ts": "2026-09-11T15:01:20.782720Z",
+          "values": {
+            "usd": {
+              "equity": 1012.83,
+              "pnl": 12.83,
+              "pnl_pct": 1.283
+            },
+            "ils": {
+              "equity": 1000.0,
+              "pnl": 0.0,
+              "pnl_pct": 0.0
+            }
+          },
+          "commit": "5976adcec344eb2d22aba209e6b4cb0549e5fe0d"
+        },
+        {
+          "ts": "2026-09-11T16:02:22.512446Z",
+          "values": {
+            "usd": {
+              "equity": 1023.63,
+              "pnl": 23.63,
+              "pnl_pct": 2.363
+            },
+            "ils": {
+              "equity": 1000.0,
+              "pnl": 0.0,
+              "pnl_pct": 0.0
+            }
+          },
+          "commit": "6c4d527a5dae55ea424db5f72e1d0b8b7da695d9"
+        },
+        {
+          "ts": "2026-09-11T16:59:30.033183Z",
+          "values": {
+            "usd": {
+              "equity": 1019.92,
+              "pnl": 19.92,
+              "pnl_pct": 1.992
+            },
+            "ils": {
+              "equity": 1000.0,
+              "pnl": 0.0,
+              "pnl_pct": 0.0
+            }
+          },
+          "commit": "76d8da76fdd4a124aece0ad02beea1bf6fc6590f"
+        },
+        {
+          "ts": "2026-09-11T18:33:51.557253Z",
+          "values": {
+            "usd": {
+              "equity": 1020.65,
+              "pnl": 20.65,
+              "pnl_pct": 2.065
+            },
+            "ils": {
+              "equity": 1000.0,
+              "pnl": 0.0,
+              "pnl_pct": 0.0
+            }
+          },
+          "commit": "ddd0eea4b0abf78dbb1459f65e01e6dd7800d119"
+        },
+        {
+          "ts": "2026-09-11T20:20:11.037022Z",
+          "values": {
+            "usd": {
+              "equity": 1012.12,
+              "pnl": 12.12,
+              "pnl_pct": 1.212
+            },
+            "ils": {
+              "equity": 1000.0,
+              "pnl": 0.0,
+              "pnl_pct": 0.0
+            }
+          },
+          "commit": "2b754b916dd10d53c9a3ac19a5f433901aec025e"
+        },
+        {
+          "ts": "2026-09-11T21:20:45.463166Z",
+          "values": {
+            "usd": {
+              "equity": 1013.38,
+              "pnl": 13.38,
+              "pnl_pct": 1.338
+            },
+            "ils": {
+              "equity": 1000.0,
+              "pnl": 0.0,
+              "pnl_pct": 0.0
+            }
+          },
+          "commit": "b87ac9cd0c8c50de6efbf5b0caa8202660bda882"
+        },
+        {
+          "ts": "2026-09-11T22:21:05.120107Z",
+          "values": {
+            "usd": {
+              "equity": 1013.5,
+              "pnl": 13.5,
+              "pnl_pct": 1.35
+            },
+            "ils": {
+              "equity": 1000.0,
+              "pnl": 0.0,
+              "pnl_pct": 0.0
+            }
+          },
+          "commit": "1137f4a664823e427a487b6a5d5f8f348f903af9"
+        },
+        {
+          "ts": "2026-09-11T23:21:51.814602Z",
+          "values": {
+            "usd": {
+              "equity": 1013.03,
+              "pnl": 13.03,
+              "pnl_pct": 1.303
+            },
+            "ils": {
+              "equity": 1000.0,
+              "pnl": 0.0,
+              "pnl_pct": 0.0
+            }
+          },
+          "commit": "f26fbd180d1fe7afba95062eaf32fc5116285fad"
+        },
+        {
+          "ts": "2026-09-12T00:22:00.741898Z",
+          "values": {
+            "usd": {
+              "equity": 1014.73,
+              "pnl": 14.73,
+              "pnl_pct": 1.473
+            },
+            "ils": {
+              "equity": 1000.0,
+              "pnl": 0.0,
+              "pnl_pct": 0.0
+            }
+          },
+          "commit": "ff0e06e79e2549dd24031f596fa214be18b835e6"
+        },
+        {
+          "ts": "2026-09-13T06:50:26.188971Z",
+          "values": {
+            "usd": {
+              "equity": 1014.73,
+              "pnl": 14.73,
+              "pnl_pct": 1.473
+            },
+            "ils": {
+              "equity": 1000.0,
+              "pnl": 0.0,
+              "pnl_pct": 0.0
+            }
+          },
+          "commit": "a8b793e43a0d0b91d530e3cedd46b6162dbebd85"
+        },
+        {
+          "ts": "2026-09-13T09:53:12.936482Z",
+          "values": {
+            "usd": {
+              "equity": 1014.73,
+              "pnl": 14.73,
+              "pnl_pct": 1.473
+            },
+            "ils": {
+              "equity": 1000.0,
+              "pnl": 0.0,
+              "pnl_pct": 0.0
+            }
+          },
+          "commit": "d00794ab03dfd27a772d9f05141f11e3dd6c9654"
+        },
+        {
+          "ts": "2026-09-14T12:38:27.598799Z",
+          "values": {
+            "usd": {
+              "equity": 923.28,
+              "pnl": -76.72,
+              "pnl_pct": -7.672
+            },
+            "ils": {
+              "equity": 1019.76,
+              "pnl": 19.76,
+              "pnl_pct": 1.976
+            }
+          },
+          "commit": "ddfdfbb65d6d129e2f322e5a39180917c3ae2f49"
+        },
+        {
+          "ts": "2026-09-14T14:35:32.161962Z",
+          "values": {
+            "usd": {
+              "equity": 931.76,
+              "pnl": -68.24,
+              "pnl_pct": -6.824
+            },
+            "ils": {
+              "equity": 1035.03,
+              "pnl": 35.03,
+              "pnl_pct": 3.503
+            }
+          },
+          "commit": "5ec26a9027f7fd85611bfd1e074bd0c5f1585c5d"
+        },
+        {
+          "ts": "2026-09-14T15:50:38.751229Z",
+          "values": {
+            "usd": {
+              "equity": 946.21,
+              "pnl": -53.79,
+              "pnl_pct": -5.379
+            },
+            "ils": {
+              "equity": 1037.06,
+              "pnl": 37.06,
+              "pnl_pct": 3.706
+            }
+          },
+          "commit": "14c29fb29ef5959f92c0ab1ea877f55a37865f7a"
+        },
+        {
+          "ts": "2026-09-14T17:20:54.956232Z",
+          "values": {
+            "usd": {
+              "equity": 951.47,
+              "pnl": -48.53,
+              "pnl_pct": -4.853
+            },
+            "ils": {
+              "equity": 1037.06,
+              "pnl": 37.06,
+              "pnl_pct": 3.706
+            }
+          },
+          "commit": "9af5f5f63b1fdb5525a381e4d042ceb61f7d5d9c"
+        },
+        {
+          "ts": "2026-09-14T18:14:17.460977Z",
+          "values": {
+            "usd": {
+              "equity": 952.69,
+              "pnl": -47.31,
+              "pnl_pct": -4.731
+            },
+            "ils": {
+              "equity": 1037.06,
+              "pnl": 37.06,
+              "pnl_pct": 3.706
+            }
+          },
+          "commit": "a76ce46fd03893a3016c3feed8d19b07c20e2147"
+        },
+        {
+          "ts": "2026-09-14T20:21:19.014553Z",
+          "values": {
+            "usd": {
+              "equity": 937.94,
+              "pnl": -62.06,
+              "pnl_pct": -6.206
+            },
+            "ils": {
+              "equity": 1037.06,
+              "pnl": 37.06,
+              "pnl_pct": 3.706
+            }
+          },
+          "commit": "2356952040323910ec4a55a83909af1f9ccbb5c3"
+        },
+        {
+          "ts": "2026-09-14T21:21:32.277207Z",
+          "values": {
+            "usd": {
+              "equity": 940.85,
+              "pnl": -59.15,
+              "pnl_pct": -5.915
+            },
+            "ils": {
+              "equity": 1037.06,
+              "pnl": 37.06,
+              "pnl_pct": 3.706
+            }
+          },
+          "commit": "052e5412c34adb2625ae882856437f22d75f3ac8"
+        },
+        {
+          "ts": "2026-09-14T22:22:15.612879Z",
+          "values": {
+            "usd": {
+              "equity": 940.74,
+              "pnl": -59.26,
+              "pnl_pct": -5.926
+            },
+            "ils": {
+              "equity": 1037.06,
+              "pnl": 37.06,
+              "pnl_pct": 3.706
+            }
+          },
+          "commit": "132789622879463e265f05969af50c8b39972893"
+        },
+        {
+          "ts": "2026-09-14T23:22:27.408370Z",
+          "values": {
+            "usd": {
+              "equity": 941.0,
+              "pnl": -59.0,
+              "pnl_pct": -5.9
+            },
+            "ils": {
+              "equity": 1037.06,
+              "pnl": 37.06,
+              "pnl_pct": 3.706
+            }
+          },
+          "commit": "73a0ab93c95e35b1dc544e43a600b3f02c7f456b"
+        },
+        {
+          "ts": "2026-09-15T00:22:56.165221Z",
+          "values": {
+            "usd": {
+              "equity": 941.2,
+              "pnl": -58.8,
+              "pnl_pct": -5.88
+            },
+            "ils": {
+              "equity": 1037.06,
+              "pnl": 37.06,
+              "pnl_pct": 3.706
+            }
+          },
+          "commit": "766028d6f9ee0b378c80097df00e659a5e2d724a"
+        },
+        {
+          "ts": "2026-09-15T10:06:03.526956Z",
+          "values": {
+            "usd": {
+              "equity": 932.4,
+              "pnl": -67.6,
+              "pnl_pct": -6.76
+            },
+            "ils": {
+              "equity": 1045.69,
+              "pnl": 45.69,
+              "pnl_pct": 4.569
+            }
+          },
+          "commit": "2a6cb588ec86dde9a5bc0e3a4828f637b4edd894"
+        },
+        {
+          "ts": "2026-09-15T11:06:32.899536Z",
+          "values": {
+            "usd": {
+              "equity": 940.97,
+              "pnl": -59.03,
+              "pnl_pct": -5.903
+            },
+            "ils": {
+              "equity": 1046.07,
+              "pnl": 46.07,
+              "pnl_pct": 4.607
+            }
+          },
+          "commit": "52392034bb12c993c87af9f225c64d86f84ac4bf"
+        },
+        {
+          "ts": "2026-09-15T12:07:37.780247Z",
+          "values": {
+            "usd": {
+              "equity": 941.5,
+              "pnl": -58.5,
+              "pnl_pct": -5.85
+            },
+            "ils": {
+              "equity": 1043.41,
+              "pnl": 43.41,
+              "pnl_pct": 4.341
+            }
+          },
+          "commit": "ec71c7fde79cc4ccd2c1a4ef9eb08444c59e3351"
+        },
+        {
+          "ts": "2026-09-15T13:07:54.209209Z",
+          "values": {
+            "usd": {
+              "equity": 943.16,
+              "pnl": -56.84,
+              "pnl_pct": -5.684
+            },
+            "ils": {
+              "equity": 1042.33,
+              "pnl": 42.33,
+              "pnl_pct": 4.233
+            }
+          },
+          "commit": "1e8e2e9c715a7b7d6294f0b46f5b0ea489058c71"
+        },
+        {
+          "ts": "2026-09-15T14:08:39.566996Z",
+          "values": {
+            "usd": {
+              "equity": 943.92,
+              "pnl": -56.08,
+              "pnl_pct": -5.608
+            },
+            "ils": {
+              "equity": 1035.3,
+              "pnl": 35.3,
+              "pnl_pct": 3.53
+            }
+          },
+          "commit": "dab321edcef7cb779aeccdb18f5e6e573d2b4089"
+        },
+        {
+          "ts": "2026-09-15T15:10:04.428744Z",
+          "values": {
+            "usd": {
+              "equity": 931.73,
+              "pnl": -68.27,
+              "pnl_pct": -6.827
+            },
+            "ils": {
+              "equity": 1029.72,
+              "pnl": 29.72,
+              "pnl_pct": 2.972
+            }
+          },
+          "commit": "a88f5e64fb7d154adb832fcd180727c4bf635e35"
+        },
+        {
+          "ts": "2026-09-15T16:11:25.218852Z",
+          "values": {
+            "usd": {
+              "equity": 928.39,
+              "pnl": -71.61,
+              "pnl_pct": -7.161
+            },
+            "ils": {
+              "equity": 1029.72,
+              "pnl": 29.72,
+              "pnl_pct": 2.972
+            }
+          },
+          "commit": "75dba2597d7bd7a4dd28dafcf4ca0110f7797553"
+        },
+        {
+          "ts": "2026-09-15T17:12:05.813615Z",
+          "values": {
+            "usd": {
+              "equity": 927.78,
+              "pnl": -72.22,
+              "pnl_pct": -7.222
+            },
+            "ils": {
+              "equity": 1029.72,
+              "pnl": 29.72,
+              "pnl_pct": 2.972
+            }
+          },
+          "commit": "a7502f49f1b4c96200fe722b57e28a848e7d2373"
+        },
+        {
+          "ts": "2026-09-15T19:07:50.644729Z",
+          "values": {
+            "usd": {
+              "equity": 925.95,
+              "pnl": -74.05,
+              "pnl_pct": -7.405
+            },
+            "ils": {
+              "equity": 1029.72,
+              "pnl": 29.72,
+              "pnl_pct": 2.972
+            }
+          },
+          "commit": "f17af75c6211a96835068747b065146b65d31e3a"
+        },
+        {
+          "ts": "2026-09-15T21:06:59.187680Z",
+          "values": {
+            "usd": {
+              "equity": 929.1,
+              "pnl": -70.9,
+              "pnl_pct": -7.09
+            },
+            "ils": {
+              "equity": 1029.72,
+              "pnl": 29.72,
+              "pnl_pct": 2.972
+            }
+          },
+          "commit": "55dca69aa090adb209f48c771c675ae05b09cda1"
+        },
+        {
+          "ts": "2026-09-15T22:10:27.530876Z",
+          "values": {
+            "usd": {
+              "equity": 926.96,
+              "pnl": -73.04,
+              "pnl_pct": -7.304
+            },
+            "ils": {
+              "equity": 1029.72,
+              "pnl": 29.72,
+              "pnl_pct": 2.972
+            }
+          },
+          "commit": "0695eb5275a856513fbc1fc3361697b8853a4e34"
+        },
+        {
+          "ts": "2026-09-15T23:10:53.573405Z",
+          "values": {
+            "usd": {
+              "equity": 928.32,
+              "pnl": -71.68,
+              "pnl_pct": -7.168
+            },
+            "ils": {
+              "equity": 1029.72,
+              "pnl": 29.72,
+              "pnl_pct": 2.972
+            }
+          },
+          "commit": "40ebce086f391a8f38a9781ac9ecdd909341f2bb"
+        },
+        {
+          "ts": "2026-09-16T00:11:25.714430Z",
+          "values": {
+            "usd": {
+              "equity": 927.31,
+              "pnl": -72.69,
+              "pnl_pct": -7.269
+            },
+            "ils": {
+              "equity": 1029.72,
+              "pnl": 29.72,
+              "pnl_pct": 2.972
+            }
+          },
+          "commit": "9a50e911ad6618ba76e1b1d08b0895c102eb7ef2"
+        },
+        {
+          "ts": "2026-09-16T07:01:38.158770Z",
+          "values": {
+            "usd": {
+              "equity": 927.31,
+              "pnl": -72.69,
+              "pnl_pct": -7.269
+            },
+            "ils": {
+              "equity": 1029.72,
+              "pnl": 29.72,
+              "pnl_pct": 2.972
+            }
+          },
+          "commit": "191280a3d09d2c94adc6c2d079deaa62584d8b6b"
+        },
+        {
+          "ts": "2026-09-16T08:01:35.905052Z",
+          "values": {
+            "usd": {
+              "equity": 946.45,
+              "pnl": -53.55,
+              "pnl_pct": -5.355
+            },
+            "ils": {
+              "equity": 1042.52,
+              "pnl": 42.52,
+              "pnl_pct": 4.252
+            }
+          },
+          "commit": "0079c49acf24012d839aba50a37b7c08883c4e26"
+        },
+        {
+          "ts": "2026-09-16T09:02:17.373151Z",
+          "values": {
+            "usd": {
+              "equity": 945.35,
+              "pnl": -54.65,
+              "pnl_pct": -5.465
+            },
+            "ils": {
+              "equity": 1037.73,
+              "pnl": 37.73,
+              "pnl_pct": 3.773
+            }
+          },
+          "commit": "2e462ba8a6ed70fb5b02f6514cd40a1c68d0c0df"
+        },
+        {
+          "ts": "2026-09-16T10:02:39.679731Z",
+          "values": {
+            "usd": {
+              "equity": 945.4,
+              "pnl": -54.6,
+              "pnl_pct": -5.46
+            },
+            "ils": {
+              "equity": 1034.72,
+              "pnl": 34.72,
+              "pnl_pct": 3.472
+            }
+          },
+          "commit": "66e38f4db382e5c808e54b39b6899834c7140f20"
+        },
+        {
+          "ts": "2026-09-16T11:04:50.248569Z",
+          "values": {
+            "usd": {
+              "equity": 946.74,
+              "pnl": -53.26,
+              "pnl_pct": -5.326
+            },
+            "ils": {
+              "equity": 1034.72,
+              "pnl": 34.72,
+              "pnl_pct": 3.472
+            }
+          },
+          "commit": "37f19b48b07f4a6bad4876e9ee59a404687677f7"
+        },
+        {
+          "ts": "2026-09-16T12:03:26.380985Z",
+          "values": {
+            "usd": {
+              "equity": 948.87,
+              "pnl": -51.13,
+              "pnl_pct": -5.113
+            },
+            "ils": {
+              "equity": 1037.22,
+              "pnl": 37.22,
+              "pnl_pct": 3.722
+            }
+          },
+          "commit": "ffa4149f276d539b4c89cf63af8fad5cb66827fe"
+        },
+        {
+          "ts": "2026-09-16T14:02:58.669865Z",
+          "values": {
+            "usd": {
+              "equity": 955.67,
+              "pnl": -44.33,
+              "pnl_pct": -4.433
+            },
+            "ils": {
+              "equity": 1029.4,
+              "pnl": 29.4,
+              "pnl_pct": 2.94
+            }
+          },
+          "commit": "9bb964661dbf36598195cd5a8f063b86433190f8"
+        },
+        {
+          "ts": "2026-09-16T15:03:39.564331Z",
+          "values": {
+            "usd": {
+              "equity": 962.75,
+              "pnl": -37.25,
+              "pnl_pct": -3.725
+            },
+            "ils": {
+              "equity": 1028.74,
+              "pnl": 28.74,
+              "pnl_pct": 2.874
+            }
+          },
+          "commit": "0f653b1b6a66269d6f974437187d613491d32344"
+        },
+        {
+          "ts": "2026-09-16T16:58:20.405790Z",
+          "values": {
+            "usd": {
+              "equity": 958.93,
+              "pnl": -41.07,
+              "pnl_pct": -4.107
+            },
+            "ils": {
+              "equity": 1028.74,
+              "pnl": 28.74,
+              "pnl_pct": 2.874
+            }
+          },
+          "commit": "f05b7b3e5135db181acca488df69eac5e40853f4"
+        },
+        {
+          "ts": "2026-09-16T17:58:52.949129Z",
+          "values": {
+            "usd": {
+              "equity": 958.19,
+              "pnl": -41.81,
+              "pnl_pct": -4.181
+            },
+            "ils": {
+              "equity": 1028.74,
+              "pnl": 28.74,
+              "pnl_pct": 2.874
+            }
+          },
+          "commit": "00e1332ad2db6993deb88eef057292ec7a8c7342"
+        },
+        {
+          "ts": "2026-09-16T18:59:28.931770Z",
+          "values": {
+            "usd": {
+              "equity": 930.88,
+              "pnl": -69.12,
+              "pnl_pct": -6.912
+            },
+            "ils": {
+              "equity": 1028.74,
+              "pnl": 28.74,
+              "pnl_pct": 2.874
+            }
+          },
+          "commit": "9fc202b31678cd099a808f3e277a3d829195f4cc"
+        },
+        {
+          "ts": "2026-09-16T19:59:36.343883Z",
+          "values": {
+            "usd": {
+              "equity": 932.96,
+              "pnl": -67.04,
+              "pnl_pct": -6.704
+            },
+            "ils": {
+              "equity": 1028.74,
+              "pnl": 28.74,
+              "pnl_pct": 2.874
+            }
+          },
+          "commit": "6a73456001cad859c1fdcb12e68014b258888998"
+        },
+        {
+          "ts": "2026-09-16T21:00:19.842636Z",
+          "values": {
+            "usd": {
+              "equity": 934.81,
+              "pnl": -65.19,
+              "pnl_pct": -6.519
+            },
+            "ils": {
+              "equity": 1028.74,
+              "pnl": 28.74,
+              "pnl_pct": 2.874
+            }
+          },
+          "commit": "4b63ac381f54ff176523b599ce7c353cc1d67e4b"
+        },
+        {
+          "ts": "2026-09-16T22:00:48.798787Z",
+          "values": {
+            "usd": {
+              "equity": 936.79,
+              "pnl": -63.21,
+              "pnl_pct": -6.321
+            },
+            "ils": {
+              "equity": 1028.74,
+              "pnl": 28.74,
+              "pnl_pct": 2.874
+            }
+          },
+          "commit": "3d7d66684d96d45280f72e8bc68725554db82a44"
+        },
+        {
+          "ts": "2026-09-16T23:01:10.967688Z",
+          "values": {
+            "usd": {
+              "equity": 944.79,
+              "pnl": -55.21,
+              "pnl_pct": -5.521
+            },
+            "ils": {
+              "equity": 1028.74,
+              "pnl": 28.74,
+              "pnl_pct": 2.874
+            }
+          },
+          "commit": "5e0e08ab45eaee57f5408ce786ba83cfabd6e414"
+        },
+        {
+          "ts": "2026-09-17T00:57:22.706631Z",
+          "values": {
+            "usd": {
+              "equity": 954.14,
+              "pnl": -45.86,
+              "pnl_pct": -4.586
+            },
+            "ils": {
+              "equity": 1028.74,
+              "pnl": 28.74,
+              "pnl_pct": 2.874
+            }
+          },
+          "commit": "a72e79f83d10227753bb8b2030bdea53cbaa72bb"
+        },
+        {
+          "ts": "2026-09-17T09:02:39.299075Z",
+          "values": {
+            "usd": {
+              "equity": 970.58,
+              "pnl": -29.42,
+              "pnl_pct": -2.942
+            },
+            "ils": {
+              "equity": 1085.09,
+              "pnl": 85.09,
+              "pnl_pct": 8.509
+            }
+          },
+          "commit": "04c9af0eb810eb8f0703b342e12ae8393554da83"
+        },
+        {
+          "ts": "2026-09-17T10:03:01.831830Z",
+          "values": {
+            "usd": {
+              "equity": 969.35,
+              "pnl": -30.65,
+              "pnl_pct": -3.065
+            },
+            "ils": {
+              "equity": 1085.99,
+              "pnl": 85.99,
+              "pnl_pct": 8.599
+            }
+          },
+          "commit": "47327acfe7e16a8029efd0c9adaf29edf0cad501"
+        },
+        {
+          "ts": "2026-09-17T11:34:02.930247Z",
+          "values": {
+            "usd": {
+              "equity": 972.15,
+              "pnl": -27.85,
+              "pnl_pct": -2.785
+            },
+            "ils": {
+              "equity": 1089.71,
+              "pnl": 89.71,
+              "pnl_pct": 8.971
+            }
+          },
+          "commit": "5b42c60ba56082de4d723ac9d3349863be9dc655"
+        },
+        {
+          "ts": "2026-09-17T12:34:44.609504Z",
+          "values": {
+            "usd": {
+              "equity": 992.7,
+              "pnl": -7.3,
+              "pnl_pct": -0.73
+            },
+            "ils": {
+              "equity": 1092.76,
+              "pnl": 92.76,
+              "pnl_pct": 9.276
+            }
+          },
+          "commit": "5a15984f7f248185107ba3673d32664ad634a8d4"
+        },
+        {
+          "ts": "2026-09-17T14:15:17.983291Z",
+          "values": {
+            "usd": {
+              "equity": 1001.98,
+              "pnl": 1.98,
+              "pnl_pct": 0.198
+            },
+            "ils": {
+              "equity": 1092.26,
+              "pnl": 92.26,
+              "pnl_pct": 9.226
+            }
+          },
+          "commit": "6b58ac5ba905e49ee21a06fbfef36394eb1cd774"
+        },
+        {
+          "ts": "2026-09-17T16:00:39.712122Z",
+          "values": {
+            "usd": {
+              "equity": 997.25,
+              "pnl": -2.75,
+              "pnl_pct": -0.275
+            },
+            "ils": {
+              "equity": 1097.35,
+              "pnl": 97.35,
+              "pnl_pct": 9.735
+            }
+          },
+          "commit": "13eb6623329fe064346cf25bfeedaa95cab8a197"
+        },
+        {
+          "ts": "2026-09-17T17:01:16.602115Z",
+          "values": {
+            "usd": {
+              "equity": 998.08,
+              "pnl": -1.92,
+              "pnl_pct": -0.192
+            },
+            "ils": {
+              "equity": 1097.35,
+              "pnl": 97.35,
+              "pnl_pct": 9.735
+            }
+          },
+          "commit": "e4ce720d03d4e466c0a744b5935138fc0130ba36"
+        },
+        {
+          "ts": "2026-09-17T18:01:38.922060Z",
+          "values": {
+            "usd": {
+              "equity": 998.49,
+              "pnl": -1.51,
+              "pnl_pct": -0.151
+            },
+            "ils": {
+              "equity": 1097.35,
+              "pnl": 97.35,
+              "pnl_pct": 9.735
+            }
+          },
+          "commit": "9a003e9ed327e3b27aaa2c22ba5e5a959fd12678"
+        },
+        {
+          "ts": "2026-09-17T19:02:18.278197Z",
+          "values": {
+            "usd": {
+              "equity": 995.81,
+              "pnl": -4.19,
+              "pnl_pct": -0.419
+            },
+            "ils": {
+              "equity": 1097.35,
+              "pnl": 97.35,
+              "pnl_pct": 9.735
+            }
+          },
+          "commit": "9f988be96b92c9c10d1d8c6b2e8eabf5edb87eac"
+        },
+        {
+          "ts": "2026-09-17T20:02:34.227510Z",
+          "values": {
+            "usd": {
+              "equity": 995.15,
+              "pnl": -4.85,
+              "pnl_pct": -0.485
+            },
+            "ils": {
+              "equity": 1097.35,
+              "pnl": 97.35,
+              "pnl_pct": 9.735
+            }
+          },
+          "commit": "74a441695367c9b33985abc49d822f89865a7aa6"
+        },
+        {
+          "ts": "2026-09-17T21:03:10.340127Z",
+          "values": {
+            "usd": {
+              "equity": 994.66,
+              "pnl": -5.34,
+              "pnl_pct": -0.534
+            },
+            "ils": {
+              "equity": 1097.35,
+              "pnl": 97.35,
+              "pnl_pct": 9.735
+            }
+          },
+          "commit": "e2064b7cf66f1a39c0e7cac8cc72c3905d033c16"
+        },
+        {
+          "ts": "2026-09-17T22:03:36.805431Z",
+          "values": {
+            "usd": {
+              "equity": 993.9,
+              "pnl": -6.1,
+              "pnl_pct": -0.61
+            },
+            "ils": {
+              "equity": 1097.35,
+              "pnl": 97.35,
+              "pnl_pct": 9.735
+            }
+          },
+          "commit": "4456be8ac2d8e0eb0c477f01409d56a559f95fd7"
+        },
+        {
+          "ts": "2026-09-17T23:04:03.423501Z",
+          "values": {
+            "usd": {
+              "equity": 991.41,
+              "pnl": -8.59,
+              "pnl_pct": -0.859
+            },
+            "ils": {
+              "equity": 1097.35,
+              "pnl": 97.35,
+              "pnl_pct": 9.735
+            }
+          },
+          "commit": "92836d5e99c031b3b8fb503020fb483f2c70a2e0"
+        },
+        {
+          "ts": "2026-09-18T00:04:28.895667Z",
+          "values": {
+            "usd": {
+              "equity": 991.94,
+              "pnl": -8.06,
+              "pnl_pct": -0.806
+            },
+            "ils": {
+              "equity": 1097.35,
+              "pnl": 97.35,
+              "pnl_pct": 9.735
+            }
+          },
+          "commit": "9c5f50e0349a475afdd0bbf58db3ca05151491e4"
+        },
+        {
+          "ts": "2026-09-18T02:05:36.280940Z",
+          "values": {
+            "usd": {
+              "equity": 991.95,
+              "pnl": -8.05,
+              "pnl_pct": -0.805
+            },
+            "ils": {
+              "equity": 1097.35,
+              "pnl": 97.35,
+              "pnl_pct": 9.735
+            }
+          },
+          "commit": "440f4e6ae81eef8f277dcae5e6e662a69b1e0372"
+        },
+        {
+          "ts": "2026-09-18T07:07:53.538780Z",
+          "values": {
+            "usd": {
+              "equity": 991.95,
+              "pnl": -8.05,
+              "pnl_pct": -0.805
+            },
+            "ils": {
+              "equity": 1097.35,
+              "pnl": 97.35,
+              "pnl_pct": 9.735
+            }
+          },
+          "commit": "b5649b2494fac91d851bf91ca7107099eed3d307"
+        },
+        {
+          "ts": "2026-09-18T08:08:33.315618Z",
+          "values": {
+            "usd": {
+              "equity": 1018.58,
+              "pnl": 18.58,
+              "pnl_pct": 1.858
+            },
+            "ils": {
+              "equity": 1097.35,
+              "pnl": 97.35,
+              "pnl_pct": 9.735
+            }
+          },
+          "commit": "2908a367ba226d1b4da66c8f246758fd68456361"
+        },
+        {
+          "ts": "2026-09-18T09:09:18.378973Z",
+          "values": {
+            "usd": {
+              "equity": 1015.41,
+              "pnl": 15.41,
+              "pnl_pct": 1.541
+            },
+            "ils": {
+              "equity": 1097.35,
+              "pnl": 97.35,
+              "pnl_pct": 9.735
+            }
+          },
+          "commit": "49b6012d9038d74549bc535ab9898983462b8fe9"
+        },
+        {
+          "ts": "2026-09-18T10:09:24.492955Z",
+          "values": {
+            "usd": {
+              "equity": 1012.72,
+              "pnl": 12.72,
+              "pnl_pct": 1.272
+            },
+            "ils": {
+              "equity": 1097.35,
+              "pnl": 97.35,
+              "pnl_pct": 9.735
+            }
+          },
+          "commit": "e59dd7fd6830d93be7a65355ad2b82e3444b440f"
+        },
+        {
+          "ts": "2026-09-18T11:30:01.167719Z",
+          "values": {
+            "usd": {
+              "equity": 1005.88,
+              "pnl": 5.88,
+              "pnl_pct": 0.588
+            },
+            "ils": {
+              "equity": 1097.35,
+              "pnl": 97.35,
+              "pnl_pct": 9.735
+            }
+          },
+          "commit": "3cb0ab2fa8541f9924a71fa42eac2fc803118ce8"
+        },
+        {
+          "ts": "2026-09-18T12:30:32.773070Z",
+          "values": {
+            "usd": {
+              "equity": 1001.22,
+              "pnl": 1.22,
+              "pnl_pct": 0.122
+            },
+            "ils": {
+              "equity": 1097.35,
+              "pnl": 97.35,
+              "pnl_pct": 9.735
+            }
+          },
+          "commit": "733c6741f1316786a1b41353d3b89a063784a4f3"
+        },
+        {
+          "ts": "2026-09-18T14:26:05.517479Z",
+          "values": {
+            "usd": {
+              "equity": 1003.61,
+              "pnl": 3.61,
+              "pnl_pct": 0.361
+            },
+            "ils": {
+              "equity": 1097.35,
+              "pnl": 97.35,
+              "pnl_pct": 9.735
+            }
+          },
+          "commit": "a220ed2be06b96a073fa035d344a73c70e9ec9c1"
+        },
+        {
+          "ts": "2026-09-18T15:26:42.248084Z",
+          "values": {
+            "usd": {
+              "equity": 1003.74,
+              "pnl": 3.74,
+              "pnl_pct": 0.374
+            },
+            "ils": {
+              "equity": 1097.35,
+              "pnl": 97.35,
+              "pnl_pct": 9.735
+            }
+          },
+          "commit": "974aa3df7772e2add7f98a5c8101c1430f1aa580"
+        }
+      ],
+      "results": [
+        {
+          "portfolio": "usd",
+          "currency": "USD",
+          "starting_value": 1000,
+          "ending_value": 1003.74,
+          "pnl": 3.74,
+          "return_pct": 0.37,
+          "ending_positions": [
+            {
+              "symbol": "TQQQ",
+              "qty": 6.393862,
+              "avg_price": 70.38,
+              "last_price": 71.46,
+              "market_value": 456.91,
+              "unrealized_pl": 6.91
+            },
+            {
+              "symbol": "SOXL",
+              "qty": 2.950847,
+              "avg_price": 118.61,
+              "last_price": 118.485,
+              "market_value": 349.63,
+              "unrealized_pl": -0.37
+            },
+            {
+              "symbol": "TSLL",
+              "qty": 20.638557,
+              "avg_price": 9.6906,
+              "last_price": 9.555,
+              "market_value": 197.2,
+              "unrealized_pl": -2.8
+            }
+          ]
+        },
+        {
+          "portfolio": "ils",
+          "currency": "ILS",
+          "starting_value": 1000,
+          "ending_value": 1097.35,
+          "pnl": 97.35,
+          "return_pct": 9.73,
+          "ending_positions": [
+            {
+              "symbol": "TEVA.TA",
+              "qty": 3.597122,
+              "avg_price": 111.2,
+              "last_price": 119.6,
+              "market_value": 430.22,
+              "unrealized_pl": 30.22
+            },
+            {
+              "symbol": "NICE.TA",
+              "qty": 0.998004,
+              "avg_price": 300.6,
+              "last_price": 327.1,
+              "market_value": 326.45,
+              "unrealized_pl": 26.45
+            },
+            {
+              "symbol": "TASE.TA",
+              "qty": 2.311248,
+              "avg_price": 129.8,
+              "last_price": 147.4,
+              "market_value": 340.68,
+              "unrealized_pl": 40.68
+            }
+          ]
+        }
+      ],
+      "source": {
+        "first_commit": "e0f28bbff623295a2e978d905e0add8894f62130",
+        "final_commit": "974aa3df7772e2add7f98a5c8101c1430f1aa580",
+        "reconstructed_from": "79 committed portfolio snapshots"
+      }
+    },
+    {
+      "id": "round-2",
+      "label": "Round 2",
+      "status": "active",
+      "started_at": "2026-09-20T17:09:06Z",
+      "ended_at": null,
+      "strategy": "USD split into an $800 digest-trigger swing sleeve and $200 same-day sleeve; separate TASE book. No stale-price or weekend fills.",
+      "starting_point": [
+        {
+          "portfolio": "usd",
+          "currency": "USD",
+          "starting_cash": 1000,
+          "target": 10000,
+          "target_date": "2026-09-27",
+          "sleeves": [
+            {
+              "id": "swing",
+              "label": "Swing sleeve",
+              "allocation": 800,
+              "cash": 800,
+              "rule": "Only Sep 20 digest setups; exit when invalidated."
+            },
+            {
+              "id": "day",
+              "label": "Day-trading sleeve",
+              "allocation": 200,
+              "cash": 200,
+              "rule": "Same-day entries and exits only; never carry overnight."
+            }
+          ]
+        },
+        {
+          "portfolio": "ils",
+          "currency": "ILS",
+          "starting_cash": 1000,
+          "target": 2000,
+          "target_date": "2026-09-27",
+          "sleeves": []
+        }
+      ],
+      "actions": [],
+      "marks": [
+        {
+          "ts": "2026-09-20T17:18:00Z",
+          "values": {
+            "usd": {
+              "equity": 1000,
+              "pnl": 0,
+              "pnl_pct": 0
+            },
+            "ils": {
+              "equity": 1000,
+              "pnl": 0,
+              "pnl_pct": 0
+            }
+          },
+          "note": "Initialized in cash; markets closed or quote stale."
+        }
+      ],
+      "results": null,
+      "source": {
+        "live_file": "data/paper-portfolio.json"
+      }
+    }
+  ]
+}
