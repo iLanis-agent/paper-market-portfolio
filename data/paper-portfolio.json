@@ -44,129 +44,45 @@
           "symbol": "TSLL",
           "name": "Direxion Daily TSLA Bull 2X Shares",
           "qty": 20.638557,
-          "avg_price": 9.6906,
-          "last_price": 9.555,
-          "price_as_of": "2026-09-18T15:26:41Z",
-          "market_value": 197.2,
-          "unrealized_pl": -2.8,
-          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLL?interval=1m&range=1d&includePrePost=true",
-          "risk": "2x daily leveraged single-stock exposure; extreme concentration risk.",
-          "market_state": "regular market"
-        }
+  "updated_at": "2026-09-20T17:18:00Z",
+  "label": "PAPER PORTFOLIO - SIMULATION ONLY",
+  "round": 2,
+  "round_started_at": "2026-09-20T17:09:06Z",
+  "round_note": "Round 2 approved September 20. US entries begin only after live trigger confirmation; no Sunday fills are fabricated.",
+  "portfolios": [
+    {
+      "id": "usd",
+      "label": "USD ROUND 2 - SWING + DAY SLEEVES",
+      "currency": "USD", "symbol": "$", "starting_cash": 1000, "cash": 1000,
+      "target": 10000, "target_date": "2026-09-27",
+      "target_note": "High-risk stretch goal, not a forecast. Swing budget $800; day-trading budget $200. Day trades must close the same session.",
+      "pricing_note": "US market is closed for the weekend. Round 2 starts in cash. Fills require a live market quote crossing a listed trigger; no backdated or synthetic fills.",
+      "market_state_summary": "US market closed - watching Monday's open; no positions yet",
+      "sleeves": [
+        {"id":"swing","label":"Swing sleeve","allocation":800,"cash":800,"rule":"Only Sep 20 digest setups; exit when invalidated."},
+        {"id":"day","label":"Day-trading sleeve","allocation":200,"cash":200,"rule":"Same-day entries and exits only; never carry overnight."}
       ],
-      "transactions": [
-        {
-          "ts": "2026-09-11T08:36:40Z",
-          "side": "BUY",
-          "symbol": "TQQQ",
-          "qty": 6.393862,
-          "price": 70.38,
-          "notional": 450,
-          "reason": "High-risk paper allocation toward leveraged Nasdaq exposure."
-        },
-        {
-          "ts": "2026-09-11T08:36:31Z",
-          "side": "BUY",
-          "symbol": "SOXL",
-          "qty": 2.950847,
-          "price": 118.61,
-          "notional": 350,
-          "reason": "High-risk paper allocation toward leveraged semiconductor exposure."
-        },
-        {
-          "ts": "2026-09-11T08:36:21Z",
-          "side": "BUY",
-          "symbol": "TSLL",
-          "qty": 20.638557,
-          "price": 9.6906,
-          "notional": 200,
-          "reason": "Smallest sleeve; leveraged TSLA exposure for upside convexity."
-        }
+      "watchlist": [
+        {"symbol":"QQQ","side":"LONG","trigger":721.73,"invalidation":715.08,"status":"WAITING FOR LIVE CONFIRMATION","note":"Primary setup; targets 730 then 736."},
+        {"symbol":"COST","side":"LONG","trigger":898.40,"invalidation":890.55,"status":"WAIT UNTIL THURSDAY EARNINGS","note":"Post-report only."},
+        {"symbol":"NVDA","side":"LONG","trigger":222.73,"invalidation":218.03,"status":"WAITING FOR QQQ CONFIRMATION","note":"Requires QQQ confirmation; headline gap risk."},
+        {"symbol":"AMZN","side":"LONG","trigger":255.43,"invalidation":251.88,"status":"WAITING","note":"Alternative short below 251.88; reclaim above 255.43 invalidates short."},
+        {"symbol":"META","side":"SHORT","trigger":660.80,"invalidation":675.00,"status":"WAITING","note":"Preferred bear case below 660.80. Bull case only above 690.15, invalid below 675."}
       ],
-      "market_state_summary": "US instruments: regular market quotes"
+      "positions": [], "transactions": []
     },
     {
-      "id": "ils",
-      "label": "TASE PAPER PORTFOLIO",
-      "currency": "ILS",
-      "symbol": "₪",
-      "starting_cash": 1000,
-      "cash": 0,
-      "target": 2000,
-      "target_date": "2026-09-18",
-      "target_note": "Stretch goal, not a forecast. Doubling in one week would require extreme risk and is unlikely. This portfolio is tracked separately from the USD portfolio.",
-      "pricing_note": "Initial fills use fractional shares and the latest available Yahoo Finance TASE quotes, quoted in agorot and converted to shekels. The TASE was closed when seeded. Simulation excludes spread, slippage, fees, taxes, and currency effects.",
-      "positions": [
-        {
-          "symbol": "TEVA.TA",
-          "name": "Teva Pharmaceutical Industries",
-          "qty": 3.597122,
-          "avg_price": 111.2,
-          "last_price": 119.6,
-          "price_as_of": "2026-09-17T14:28:55Z",
-          "market_value": 430.22,
-          "unrealized_pl": 30.22,
-          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TEVA.TA?interval=1m&range=1d&includePrePost=true",
-          "risk": "Single-stock pharmaceutical risk; US dual listing and event sensitivity.",
-          "market_state": "market closed"
-        },
-        {
-          "symbol": "NICE.TA",
-          "name": "NICE Ltd.",
-          "qty": 0.998004,
-          "avg_price": 300.6,
-          "last_price": 327.1,
-          "price_as_of": "2026-09-17T14:27:14Z",
-          "market_value": 326.45,
-          "unrealized_pl": 26.45,
-          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NICE.TA?interval=1m&range=1d&includePrePost=true",
-          "risk": "Concentrated software stock; earnings and valuation sensitivity.",
-          "market_state": "market closed"
-        },
-        {
-          "symbol": "TASE.TA",
-          "name": "Tel Aviv Stock Exchange Ltd.",
-          "qty": 2.311248,
-          "avg_price": 129.8,
-          "last_price": 147.4,
-          "price_as_of": "2026-09-17T14:26:31Z",
-          "market_value": 340.68,
-          "unrealized_pl": 40.68,
-          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TASE.TA?interval=1m&range=1d&includePrePost=true",
-          "risk": "Concentrated exposure to Israeli capital-market activity and regulation.",
-          "market_state": "market closed"
-        }
+      "id": "ils", "label": "TASE ROUND 2 PAPER PORTFOLIO", "currency": "ILS", "symbol": "₪",
+      "starting_cash": 1000, "cash": 1000, "target": 2000, "target_date": "2026-09-27",
+      "target_note": "High-risk stretch goal, not a forecast. Tracked separately from USD.",
+      "pricing_note": "Round 2 starts in cash. The quote source is still showing stale Sep 17 prints, so no fresh TASE fills are recorded yet.",
+      "market_state_summary": "Waiting for fresh TASE quotes - no stale-price fills",
+      "watchlist": [
+        {"symbol":"TEVA.TA","side":"LONG","status":"WAITING FOR FRESH QUOTE","note":"Planned 40% sleeve; liquid dual-listed healthcare exposure."},
+        {"symbol":"NICE.TA","side":"LONG","status":"WAITING FOR FRESH QUOTE","note":"Planned 30% sleeve; concentrated technology exposure."},
+        {"symbol":"TASE.TA","side":"LONG","status":"WAITING FOR FRESH QUOTE","note":"Planned 30% sleeve; exchange-volume exposure."}
       ],
-      "transactions": [
-        {
-          "ts": "2026-09-11T08:38:25Z",
-          "side": "BUY",
-          "symbol": "TEVA.TA",
-          "qty": 3.597122,
-          "price": 111.2,
-          "notional": 400,
-          "reason": "High-risk TASE paper allocation; liquid dual-listed healthcare exposure."
-        },
-        {
-          "ts": "2026-09-11T08:38:25Z",
-          "side": "BUY",
-          "symbol": "NICE.TA",
-          "qty": 0.998004,
-          "price": 300.6,
-          "notional": 300,
-          "reason": "High-risk TASE paper allocation; concentrated technology exposure."
-        },
-        {
-          "ts": "2026-09-11T08:38:25Z",
-          "side": "BUY",
-          "symbol": "TASE.TA",
-          "qty": 2.311248,
-          "price": 129.8,
-          "notional": 300,
-          "reason": "High-risk TASE paper allocation; direct exchange-volume exposure."
-        }
-      ],
-      "market_state_summary": "Tel Aviv Stock Exchange: closed; latest official close retained"
+      "positions": [], "transactions": []
     }
   ]
-}
+        }
