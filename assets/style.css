@@ -116,3 +116,5 @@ footer a { color: var(--accent); }
   .pricing-note { margin: 5px 0; }
   footer { margin-top: 8px; padding-top: 7px; font-size: 9px; }
 }
+.round-note{background:#13233a;border:1px solid #58a6ff;color:#c9e2ff;padding:10px 12px;border-radius:8px;margin:0 0 14px;font-size:13px}.sleeves{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}.sleeve{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:12px}.sleeve span,.sleeve small{color:var(--muted)}.empty{text-align:center;padding:18px;color:var(--muted)}
+@media(max-width:520px){.round-note{font-size:10px;padding:7px 9px;margin-bottom:7px}.sleeves{grid-template-columns:1fr 1fr;gap:5px}.sleeve{padding:7px;font-size:11px}.sleeve small{font-size:8px}#watchlist th:nth-child(2),#watchlist td:nth-child(2),#watchlist th:nth-child(4),#watchlist td:nth-child(4){display:none}#watchlist th:nth-child(1){width:38%}#watchlist th:nth-child(3){width:25%}#watchlist th:nth-child(5){width:37%}#positions th:nth-child(1),#positions td:nth-child(1){display:none}}
