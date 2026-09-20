@@ -1,42 +1,18 @@
 (function(){"use strict";
-  function esc(s) {
-    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
-      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
-    });
-  }
-
-  function shortAddr(a) { return a.length > 16 ? a.slice(0, 8) + "..." + a.slice(-6) : a; }
-
-  function badgeFor(status) {
-    var map = {
-      "active": "ok", "ok": "ok", "success": "ok",
-      "retrying": "warn", "quota-exhausted": "warn",
-      "failed": "bad", "blocked": "bad",
-      "pending": "pending", "attempt": "info", "tx": "ok"
-    };
-    return '<span class="badge ' + (map[status] || "info") + '">' + esc(status) + "</span>";
-  }
-
-  function money(n) { return "$" + Number(n || 0).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}); }
-  function loadPortfolio() {
-    return fetch("data/paper-portfolio.json").then(function (r) { return r.json(); }).then(function (d) {
-      var active = 0;
-      function fm(n, pf) { return (pf.symbol || "") + Number(n || 0).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}); }
-      function render() {
-        var pf = d.portfolios[active];
-        document.getElementById("portfolio-title").textContent = pf.label;
-        document.getElementById("portfolio-switch").innerHTML = d.portfolios.map(function (x, i) { return '<button class="portfolio-choice ' + (i === active ? 'active' : '') + '" data-pf="' + i + '">' + esc(x.currency) + ' portfolio</button>'; }).join("");
-        document.querySelectorAll(".portfolio-choice").forEach(function(btn){ btn.addEventListener("click",function(){active=Number(btn.dataset.pf);render();}); });
-        var invested = pf.positions.reduce(function (sum, p) { return sum + Number(p.market_value || 0); }, 0);
-        var equity = Number(pf.cash || 0) + invested, gain = equity - Number(pf.starting_cash || 0), gainPct = gain / Number(pf.starting_cash) * 100;
-        document.getElementById("portfolio-stats").innerHTML = [["Portfolio value",fm(equity,pf)],["Cash",fm(pf.cash,pf)],["Total gain/loss",(gain >= 0 ? "+" : "") + fm(gain,pf) + " (" + gainPct.toFixed(2) + "%)"],["Stretch target",fm(pf.target,pf) + " by " + esc(pf.target_date)]].map(function(x){return '<div class="stat"><span>'+x[0]+'</span><strong>'+x[1]+'</strong></div>';}).join("");
-        document.getElementById("target-note").textContent = pf.market_state_summary + ". " + pf.target_note;
-        document.getElementById("pricing-note").textContent = pf.pricing_note + " Updated: " + new Date(d.updated_at).toLocaleString();
-        document.querySelector("#positions tbody").innerHTML = pf.positions.map(function(p){var pl=Number(p.unrealized_pl||0),cls=pl>0?"gain":pl<0?"loss":"";return "<tr><td><strong>"+esc(p.symbol)+"</strong><span class=\"status-note\">"+esc(p.name)+"</span></td><td>"+esc(Number(p.qty).toFixed(6))+"</td><td>"+fm(p.avg_price,pf)+"</td><td><a href=\""+esc(p.source_url)+"\" target=\"_blank\" rel=\"noopener\">"+fm(p.last_price,pf)+"</a><span class=\"status-note\">"+esc(p.price_as_of)+"</span></td><td>"+fm(p.market_value,pf)+"</td><td class=\""+cls+"\">"+(pl>=0?"+":"")+fm(pl,pf)+"</td><td>"+esc(p.risk)+"</td></tr>";}).join("");
-        document.querySelector("#transactions tbody").innerHTML = pf.transactions.slice().sort(function(a,b){return a.ts<b.ts?1:-1;}).map(function(t){return "<tr><td>"+esc(t.ts.replace("T"," ").replace("Z",""))+"</td><td>"+badgeFor(t.side==="BUY"?"success":"warn")+"</td><td><strong>"+esc(t.symbol)+"</strong></td><td>"+esc(Number(t.qty).toFixed(6))+"</td><td>"+fm(t.price,pf)+"</td><td>"+fm(t.notional,pf)+"</td><td>"+esc(t.reason)+"</td></tr>";}).join("");
-      }
-      render();
-    });
-  }
-loadPortfolio().then(function(){document.getElementById("updated").textContent="Data last updated: "+new Date().toLocaleString();}).catch(console.error);
-})();
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+function badge(s){var c=/WAIT|CLOSED/.test(s)?"warn":/ACTIVE|TRIGGERED/.test(s)?"ok":"info";return '<span class="badge '+c+'">'+esc(s)+'</span>';}
+fetch("data/paper-portfolio.json?x="+Date.now()).then(function(r){return r.json();}).then(function(d){var active=0;
+function render(){var p=d.portfolios[active], fm=function(n){return p.symbol+Number(n||0).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2});};
+document.getElementById("round-note").textContent=d.round_note;
+document.getElementById("portfolio-title").textContent=p.label;
+document.getElementById("portfolio-switch").innerHTML=d.portfolios.map(function(x,i){return '<button class="portfolio-choice '+(i===active?'active':'')+'" data-i="'+i+'">'+esc(x.currency)+' portfolio</button>';}).join("");
+document.querySelectorAll(".portfolio-choice").forEach(function(b){b.onclick=function(){active=Number(b.dataset.i);render();};});
+var invested=p.positions.reduce(function(s,x){return s+Number(x.market_value||0);},0),eq=p.cash+invested,g=eq-p.starting_cash,pct=g/p.starting_cash*100;
+document.getElementById("portfolio-stats").innerHTML=[["Portfolio value",fm(eq)],["Cash",fm(p.cash)],["Total gain/loss",(g>=0?"+":"")+fm(g)+" ("+pct.toFixed(2)+"%)"],["Stretch target",fm(p.target)+" by "+p.target_date]].map(function(x){return '<div class="stat"><span>'+x[0]+'</span><strong>'+x[1]+'</strong></div>';}).join("");
+document.getElementById("target-note").textContent=p.market_state_summary+". "+p.target_note;
+var sw=document.getElementById("sleeves-wrap"), sleeves=p.sleeves||[];sw.style.display=sleeves.length?"block":"none";document.getElementById("sleeves").innerHTML=sleeves.map(function(x){return '<div class="sleeve"><strong>'+esc(x.label)+'</strong><span>'+fm(x.allocation)+' allocated · '+fm(x.cash)+' cash</span><small>'+esc(x.rule)+'</small></div>';}).join("");
+document.querySelector("#watchlist tbody").innerHTML=(p.watchlist||[]).map(function(w){var tr=w.trigger==null?"-":(w.side==="SHORT"?"< ":"> ")+fm(w.trigger), inv=w.invalidation==null?"-":fm(w.invalidation);return '<tr><td><strong>'+esc(w.symbol)+'</strong><span class="status-note">'+esc(w.note)+'</span></td><td>'+esc(w.side)+'</td><td>'+tr+'</td><td>'+inv+'</td><td>'+badge(w.status)+'</td></tr>';}).join("");
+document.querySelector("#positions tbody").innerHTML=p.positions.length?p.positions.map(function(x){var pl=Number(x.unrealized_pl||0);return '<tr><td>'+esc(x.sleeve||"")+'</td><td><strong>'+esc(x.symbol)+'</strong></td><td>'+Number(x.qty).toFixed(6)+'</td><td>'+fm(x.avg_price)+'</td><td>'+fm(x.last_price)+'</td><td>'+fm(x.market_value)+'</td><td class="'+(pl<0?'loss':'gain')+'">'+(pl>=0?'+':'')+fm(pl)+'</td><td>'+esc(x.risk)+'</td></tr>';}).join(""):'<tr><td colspan="8" class="empty">No positions. Waiting for live triggers.</td></tr>';
+document.querySelector("#transactions tbody").innerHTML=p.transactions.length?p.transactions.slice().reverse().map(function(t){return '<tr><td>'+esc(t.ts)+'</td><td>'+esc(t.sleeve||"")+'</td><td>'+esc(t.side)+'</td><td>'+esc(t.symbol)+'</td><td>'+Number(t.qty).toFixed(6)+'</td><td>'+fm(t.price)+'</td><td>'+fm(t.notional)+'</td><td>'+esc(t.reason)+'</td></tr>';}).join(""):'<tr><td colspan="8" class="empty">No round 2 transactions yet.</td></tr>';
+document.getElementById("pricing-note").textContent=p.pricing_note+" Data updated: "+new Date(d.updated_at).toLocaleString();}
+render();document.getElementById("updated").textContent="Round "+d.round+" · data last updated "+new Date(d.updated_at).toLocaleString();}).catch(console.error);})();
