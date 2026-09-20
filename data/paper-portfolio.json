@@ -1,49 +1,4 @@
 {
-  "updated_at": "2026-09-18T15:26:42.248084Z",
-  "label": "PAPER PORTFOLIO - SIMULATION ONLY",
-  "portfolios": [
-    {
-      "id": "usd",
-      "label": "US HIGH-RISK PAPER PORTFOLIO",
-      "currency": "USD",
-      "symbol": "$",
-      "starting_cash": 1000,
-      "cash": 0,
-      "target": 10000,
-      "target_date": "2026-09-18",
-      "target_note": "Stretch goal, not a forecast. Reaching 10x in one week would require extreme risk and is very unlikely.",
-      "pricing_note": "Initial fills use fractional shares and indicative Yahoo Finance 1-minute quotes observed before the US market open. This simulation is not a brokerage fill and excludes spread, slippage, fees, taxes, and financing effects.",
-      "positions": [
-        {
-          "symbol": "TQQQ",
-          "name": "ProShares UltraPro QQQ",
-          "qty": 6.393862,
-          "avg_price": 70.38,
-          "last_price": 71.46,
-          "price_as_of": "2026-09-18T15:26:39Z",
-          "market_value": 456.91,
-          "unrealized_pl": 6.91,
-          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TQQQ?interval=1m&range=1d&includePrePost=true",
-          "risk": "3x daily leveraged Nasdaq-100 exposure; path dependence and fast losses.",
-          "market_state": "regular market"
-        },
-        {
-          "symbol": "SOXL",
-          "name": "Direxion Daily Semiconductor Bull 3X Shares",
-          "qty": 2.950847,
-          "avg_price": 118.61,
-          "last_price": 118.485,
-          "price_as_of": "2026-09-18T15:26:41Z",
-          "market_value": 349.63,
-          "unrealized_pl": -0.37,
-          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SOXL?interval=1m&range=1d&includePrePost=true",
-          "risk": "3x daily leveraged semiconductor exposure; high volatility and decay.",
-          "market_state": "regular market"
-        },
-        {
-          "symbol": "TSLL",
-          "name": "Direxion Daily TSLA Bull 2X Shares",
-          "qty": 20.638557,
   "updated_at": "2026-09-20T17:18:00Z",
   "label": "PAPER PORTFOLIO - SIMULATION ONLY",
   "round": 2,
@@ -85,4 +40,4 @@
       "positions": [], "transactions": []
     }
   ]
-        }
+}
