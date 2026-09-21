@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-21T15:46:54Z",
+  "updated_at": "2026-09-21T19:08:35Z",
   "rounds": [
     {
       "id": "round-1",
@@ -1499,6 +1499,26 @@
           "notional": 200,
           "reason": "Same-day momentum paper trade after regular-session QQQ confirmation; must close before today’s market close.",
           "ts": "2026-09-21T13:46:56Z"
+        },
+        {
+          "ts": "2026-09-21T19:08:35Z",
+          "sleeve": "day",
+          "side": "SELL",
+          "symbol": "QQQ",
+          "qty": 0.273422,
+          "price": 741.379,
+          "notional": 202.71,
+          "reason": "Required same-session close before the US market close; realized paper gain."
+        },
+        {
+          "ts": "2026-09-21T19:08:35Z",
+          "sleeve": "swing",
+          "side": "BUY",
+          "symbol": "AMZN",
+          "qty": 0.385639,
+          "price": 259.31,
+          "notional": 100,
+          "reason": "AMZN long trigger confirmed above 255.43 during regular trading; exit below 251.88."
         }
       ],
       "marks": [
@@ -1549,6 +1569,22 @@
             }
           },
           "note": "Hourly regular-session mark; TASE remains cash because quote source is stale."
+        },
+        {
+          "ts": "2026-09-21T19:08:35Z",
+          "values": {
+            "usd": {
+              "equity": 1011.75,
+              "pnl": 11.75,
+              "pnl_pct": 1.175
+            },
+            "ils": {
+              "equity": 1000,
+              "pnl": 0,
+              "pnl_pct": 0
+            }
+          },
+          "note": "Day QQQ closed with +2.71 realized; remaining $100 swing cash entered AMZN."
         }
       ],
       "results": null,
