@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-21T13:46:56Z",
+  "updated_at": "2026-09-21T15:46:54Z",
   "rounds": [
     {
       "id": "round-1",
@@ -1533,6 +1533,22 @@
             }
           },
           "note": "First regular-session trigger fills: QQQ swing, NVDA swing and QQQ same-day sleeve."
+        },
+        {
+          "ts": "2026-09-21T15:46:54Z",
+          "values": {
+            "usd": {
+              "equity": 1005.32,
+              "pnl": 5.32,
+              "pnl_pct": 0.532
+            },
+            "ils": {
+              "equity": 1000,
+              "pnl": 0,
+              "pnl_pct": 0
+            }
+          },
+          "note": "Hourly regular-session mark; TASE remains cash because quote source is stale."
         }
       ],
       "results": null,
