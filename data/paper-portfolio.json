@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T15:46:54Z",
+  "updated_at": "2026-09-21T19:08:35Z",
   "label": "PAPER PORTFOLIO - SIMULATION ONLY",
   "round": 2,
   "round_started_at": "2026-09-20T17:09:06Z",
@@ -11,25 +11,25 @@
       "currency": "USD",
       "symbol": "$",
       "starting_cash": 1000,
-      "cash": 100,
+      "cash": 202.71,
       "target": 10000,
       "target_date": "2026-09-27",
       "target_note": "High-risk stretch goal, not a forecast. Swing budget $800; day-trading budget $200. Day trades must close the same session.",
-      "pricing_note": "Paper fills use the first hourly regular-session quotes observed after trigger confirmation. They exclude spread, slippage, fees and tax. The $200 day sleeve must close before today’s market close.",
-      "market_state_summary": "US regular session: QQQ and NVDA open; equity $1005.32, P&L $+5.32",
+      "pricing_note": "Day sleeve closed before the US market close. Paper marks exclude spread, slippage, fees and tax.",
+      "market_state_summary": "US regular session: day sleeve closed; QQQ, NVDA and AMZN swing positions open; equity $1011.75, P&L $+11.75",
       "sleeves": [
         {
           "id": "swing",
           "label": "Swing sleeve",
           "allocation": 800,
-          "cash": 100,
+          "cash": 0,
           "rule": "Only Sep 20 digest setups; exit when invalidated."
         },
         {
           "id": "day",
           "label": "Day-trading sleeve",
           "allocation": 200,
-          "cash": 0,
+          "cash": 202.71,
           "rule": "Same-day entries and exits only; never carry overnight."
         }
       ],
@@ -39,7 +39,7 @@
           "side": "LONG",
           "trigger": 721.73,
           "invalidation": 715.08,
-          "status": "TRIGGERED - SWING + DAY OPEN",
+          "status": "TRIGGERED - SWING OPEN; DAY CLOSED",
           "note": "Primary setup; targets 730 then 736."
         },
         {
@@ -63,7 +63,7 @@
           "side": "LONG",
           "trigger": 255.43,
           "invalidation": 251.88,
-          "status": "WAITING",
+          "status": "TRIGGERED - SWING OPEN",
           "note": "Alternative short below 251.88; reclaim above 255.43 invalidates short."
         },
         {
@@ -82,10 +82,10 @@
           "name": "Invesco QQQ Trust",
           "qty": 0.546844,
           "avg_price": 731.47,
-          "last_price": 737.52,
-          "price_as_of": "2026-09-21T15:46:54Z",
-          "market_value": 403.31,
-          "unrealized_pl": 3.31,
+          "last_price": 741.379,
+          "price_as_of": "2026-09-21T19:08:35Z",
+          "market_value": 405.42,
+          "unrealized_pl": 5.42,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?interval=1m&range=1d&includePrePost=true",
           "risk": "Exit below 715.08; first target 730 passed, next target 736.",
           "market_state": "regular market"
@@ -96,26 +96,26 @@
           "name": "NVIDIA",
           "qty": 1.334431,
           "avg_price": 224.815,
-          "last_price": 225.085,
-          "price_as_of": "2026-09-21T15:46:54Z",
-          "market_value": 300.36,
-          "unrealized_pl": 0.36,
+          "last_price": 227.53,
+          "price_as_of": "2026-09-21T19:08:35Z",
+          "market_value": 303.62,
+          "unrealized_pl": 3.62,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?interval=1m&range=1d&includePrePost=true",
           "risk": "Exit below 218.03; QQQ confirmation required.",
           "market_state": "regular market"
         },
         {
-          "sleeve": "day",
-          "symbol": "QQQ",
-          "name": "Invesco QQQ Trust",
-          "qty": 0.273422,
-          "avg_price": 731.47,
-          "last_price": 737.52,
-          "price_as_of": "2026-09-21T15:46:54Z",
-          "market_value": 201.65,
-          "unrealized_pl": 1.65,
-          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?interval=1m&range=1d&includePrePost=true",
-          "risk": "Same-day only; close before market close.",
+          "sleeve": "swing",
+          "symbol": "AMZN",
+          "name": "Amazon",
+          "qty": 0.385639,
+          "avg_price": 259.31,
+          "last_price": 259.31,
+          "price_as_of": "2026-09-21T19:08:35Z",
+          "market_value": 100,
+          "unrealized_pl": 0,
+          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?interval=1m&range=1d&includePrePost=true",
+          "risk": "Exit below 251.88.",
           "market_state": "regular market"
         }
       ],
@@ -149,6 +149,26 @@
           "notional": 200,
           "reason": "Same-day momentum paper trade after regular-session QQQ confirmation; must close before today’s market close.",
           "ts": "2026-09-21T13:46:56Z"
+        },
+        {
+          "ts": "2026-09-21T19:08:35Z",
+          "sleeve": "day",
+          "side": "SELL",
+          "symbol": "QQQ",
+          "qty": 0.273422,
+          "price": 741.379,
+          "notional": 202.71,
+          "reason": "Required same-session close before the US market close; realized paper gain."
+        },
+        {
+          "ts": "2026-09-21T19:08:35Z",
+          "sleeve": "swing",
+          "side": "BUY",
+          "symbol": "AMZN",
+          "qty": 0.385639,
+          "price": 259.31,
+          "notional": 100,
+          "reason": "AMZN long trigger confirmed above 255.43 during regular trading; exit below 251.88."
         }
       ]
     },
