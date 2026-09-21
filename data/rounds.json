@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-20T17:32:00Z",
+  "updated_at": "2026-09-21T13:46:56Z",
   "rounds": [
     {
       "id": "round-1",
@@ -1469,7 +1469,38 @@
           "sleeves": []
         }
       ],
-      "actions": [],
+      "actions": [
+        {
+          "sleeve": "swing",
+          "side": "BUY",
+          "symbol": "QQQ",
+          "qty": 0.546844,
+          "price": 731.47,
+          "notional": 400,
+          "reason": "Sep 20 QQQ long trigger confirmed above 721.73 during regular trading; first target 730 already passed, next target 736; exit below 715.08.",
+          "ts": "2026-09-21T13:46:56Z"
+        },
+        {
+          "sleeve": "swing",
+          "side": "BUY",
+          "symbol": "NVDA",
+          "qty": 1.334431,
+          "price": 224.815,
+          "notional": 300,
+          "reason": "NVDA crossed 222.73 with QQQ simultaneously confirmed above 721.73; exit below 218.03.",
+          "ts": "2026-09-21T13:46:56Z"
+        },
+        {
+          "sleeve": "day",
+          "side": "BUY",
+          "symbol": "QQQ",
+          "qty": 0.273422,
+          "price": 731.47,
+          "notional": 200,
+          "reason": "Same-day momentum paper trade after regular-session QQQ confirmation; must close before today’s market close.",
+          "ts": "2026-09-21T13:46:56Z"
+        }
+      ],
       "marks": [
         {
           "ts": "2026-09-20T17:18:00Z",
@@ -1486,6 +1517,22 @@
             }
           },
           "note": "Initialized in cash; markets closed or quote stale."
+        },
+        {
+          "ts": "2026-09-21T13:46:56Z",
+          "values": {
+            "usd": {
+              "equity": 1000,
+              "pnl": 0,
+              "pnl_pct": 0
+            },
+            "ils": {
+              "equity": 1000,
+              "pnl": 0,
+              "pnl_pct": 0
+            }
+          },
+          "note": "First regular-session trigger fills: QQQ swing, NVDA swing and QQQ same-day sleeve."
         }
       ],
       "results": null,
