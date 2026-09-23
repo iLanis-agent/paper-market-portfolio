@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T07:57:45Z",
+  "updated_at": "2026-09-23T08:57:26Z",
   "label": "PAPER PORTFOLIO - SIMULATION ONLY",
   "round": 2,
   "round_started_at": "2026-09-20T17:09:06Z",
@@ -183,7 +183,7 @@
       "target_date": "2026-09-27",
       "target_note": "High-risk stretch goal, not a forecast. Tracked separately from USD.",
       "pricing_note": "Fresh TASE session quotes returned Sep 23; planned 40/30/30 allocation filled at live prices. Marks exclude spread, fees and tax.",
-      "market_state_summary": "TASE open: TEVA, NICE and TASE positions opened at fresh Sep 23 quotes; equity ₪1,000.00.",
+      "market_state_summary": "TASE open: marked 2026-09-23T08:57:26Z; equity ₪1,000.01, P&L ₪+0.01.",
       "watchlist": [
         {
           "symbol": "TEVA.TA",
@@ -210,10 +210,10 @@
           "name": "Teva",
           "qty": 3.352892,
           "avg_price": 119.3,
-          "last_price": 119.3,
-          "price_as_of": "2026-09-23T07:57:45Z",
-          "market_value": 400,
-          "unrealized_pl": 0,
+          "last_price": 119.2,
+          "price_as_of": "2026-09-23T08:57:26Z",
+          "market_value": 399.66,
+          "unrealized_pl": -0.34,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TEVA.TA?interval=1m&range=1d",
           "market_state": "TASE regular session"
         },
@@ -222,10 +222,10 @@
           "name": "NICE",
           "qty": 0.854214,
           "avg_price": 351.2,
-          "last_price": 351.2,
-          "price_as_of": "2026-09-23T07:57:45Z",
-          "market_value": 300,
-          "unrealized_pl": 0,
+          "last_price": 350.9,
+          "price_as_of": "2026-09-23T08:56:50Z",
+          "market_value": 299.74,
+          "unrealized_pl": -0.26,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NICE.TA?interval=1m&range=1d",
           "market_state": "TASE regular session"
         },
@@ -234,10 +234,10 @@
           "name": "Tel Aviv Stock Exchange",
           "qty": 2.04918,
           "avg_price": 146.4,
-          "last_price": 146.4,
-          "price_as_of": "2026-09-23T07:57:45Z",
-          "market_value": 300,
-          "unrealized_pl": 0,
+          "last_price": 146.7,
+          "price_as_of": "2026-09-23T08:57:19Z",
+          "market_value": 300.61,
+          "unrealized_pl": 0.61,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TASE.TA?interval=1m&range=1d",
           "market_state": "TASE regular session"
         }
