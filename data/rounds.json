@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-22T20:00:00Z",
+  "updated_at": "2026-09-23T07:57:45Z",
   "rounds": [
     {
       "id": "round-1",
@@ -1497,7 +1497,7 @@
           "qty": 0.273422,
           "price": 731.47,
           "notional": 200,
-          "reason": "Same-day momentum paper trade after regular-session QQQ confirmation; must close before today\u2019s market close.",
+          "reason": "Same-day momentum paper trade after regular-session QQQ confirmation; must close before today’s market close.",
           "ts": "2026-09-21T13:46:56Z"
         },
         {
@@ -1519,6 +1519,36 @@
           "price": 259.31,
           "notional": 100,
           "reason": "AMZN long trigger confirmed above 255.43 during regular trading; exit below 251.88."
+        },
+        {
+          "portfolio": "ils",
+          "ts": "2026-09-23T07:57:45Z",
+          "side": "BUY",
+          "symbol": "TEVA.TA",
+          "qty": 3.352892,
+          "price": 119.3,
+          "notional": 400,
+          "reason": "Planned 40% sleeve; liquid dual-listed healthcare exposure. First fresh TASE session quote of round 2."
+        },
+        {
+          "portfolio": "ils",
+          "ts": "2026-09-23T07:57:45Z",
+          "side": "BUY",
+          "symbol": "NICE.TA",
+          "qty": 0.854214,
+          "price": 351.2,
+          "notional": 300,
+          "reason": "Planned 30% sleeve; concentrated technology exposure. First fresh TASE session quote of round 2."
+        },
+        {
+          "portfolio": "ils",
+          "ts": "2026-09-23T07:57:45Z",
+          "side": "BUY",
+          "symbol": "TASE.TA",
+          "qty": 2.04918,
+          "price": 146.4,
+          "notional": 300,
+          "reason": "Planned 30% sleeve; exchange-volume exposure. First fresh TASE session quote of round 2."
         }
       ],
       "marks": [
@@ -1601,6 +1631,22 @@
             }
           },
           "note": "Sep 22 US close: QQQ 747.46, NVDA 228.87, AMZN 254.98. No invalidation. TASE still cash (source stale)."
+        },
+        {
+          "ts": "2026-09-23T07:57:45Z",
+          "values": {
+            "usd": {
+              "equity": 1015.19,
+              "pnl": 15.19,
+              "pnl_pct": 1.519
+            },
+            "ils": {
+              "equity": 1000,
+              "pnl": 0,
+              "pnl_pct": 0
+            }
+          },
+          "note": "TASE fresh quotes: opened TEVA ₪400, NICE ₪300, TASE ₪300. USD unchanged from Sep 22 close (US market closed)."
         }
       ],
       "results": null,
@@ -1609,4 +1655,4 @@
       }
     }
   ]
-            }
+    }
