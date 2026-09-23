@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T20:00:00Z",
+  "updated_at": "2026-09-23T07:57:45Z",
   "label": "PAPER PORTFOLIO - SIMULATION ONLY",
   "round": 2,
   "round_started_at": "2026-09-20T17:09:06Z",
@@ -147,7 +147,7 @@
           "qty": 0.273422,
           "price": 731.47,
           "notional": 200,
-          "reason": "Same-day momentum paper trade after regular-session QQQ confirmation; must close before today\u2019s market close.",
+          "reason": "Same-day momentum paper trade after regular-session QQQ confirmation; must close before today’s market close.",
           "ts": "2026-09-21T13:46:56Z"
         },
         {
@@ -176,36 +176,104 @@
       "id": "ils",
       "label": "TASE ROUND 2 PAPER PORTFOLIO",
       "currency": "ILS",
-      "symbol": "\u20aa",
+      "symbol": "₪",
       "starting_cash": 1000,
-      "cash": 1000,
+      "cash": 0,
       "target": 2000,
       "target_date": "2026-09-27",
       "target_note": "High-risk stretch goal, not a forecast. Tracked separately from USD.",
-      "pricing_note": "Round 2 starts in cash. The quote source is still showing stale Sep 17 prints, so no fresh TASE fills are recorded yet.",
-      "market_state_summary": "Waiting for fresh TASE quotes - no stale-price fills",
+      "pricing_note": "Fresh TASE session quotes returned Sep 23; planned 40/30/30 allocation filled at live prices. Marks exclude spread, fees and tax.",
+      "market_state_summary": "TASE open: TEVA, NICE and TASE positions opened at fresh Sep 23 quotes; equity ₪1,000.00.",
       "watchlist": [
         {
           "symbol": "TEVA.TA",
           "side": "LONG",
-          "status": "WAITING FOR FRESH QUOTE",
+          "status": "OPEN",
           "note": "Planned 40% sleeve; liquid dual-listed healthcare exposure."
         },
         {
           "symbol": "NICE.TA",
           "side": "LONG",
-          "status": "WAITING FOR FRESH QUOTE",
+          "status": "OPEN",
           "note": "Planned 30% sleeve; concentrated technology exposure."
         },
         {
           "symbol": "TASE.TA",
           "side": "LONG",
-          "status": "WAITING FOR FRESH QUOTE",
+          "status": "OPEN",
           "note": "Planned 30% sleeve; exchange-volume exposure."
         }
       ],
-      "positions": [],
-      "transactions": []
+      "positions": [
+        {
+          "symbol": "TEVA.TA",
+          "name": "Teva",
+          "qty": 3.352892,
+          "avg_price": 119.3,
+          "last_price": 119.3,
+          "price_as_of": "2026-09-23T07:57:45Z",
+          "market_value": 400,
+          "unrealized_pl": 0,
+          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TEVA.TA?interval=1m&range=1d",
+          "market_state": "TASE regular session"
+        },
+        {
+          "symbol": "NICE.TA",
+          "name": "NICE",
+          "qty": 0.854214,
+          "avg_price": 351.2,
+          "last_price": 351.2,
+          "price_as_of": "2026-09-23T07:57:45Z",
+          "market_value": 300,
+          "unrealized_pl": 0,
+          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NICE.TA?interval=1m&range=1d",
+          "market_state": "TASE regular session"
+        },
+        {
+          "symbol": "TASE.TA",
+          "name": "Tel Aviv Stock Exchange",
+          "qty": 2.04918,
+          "avg_price": 146.4,
+          "last_price": 146.4,
+          "price_as_of": "2026-09-23T07:57:45Z",
+          "market_value": 300,
+          "unrealized_pl": 0,
+          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TASE.TA?interval=1m&range=1d",
+          "market_state": "TASE regular session"
+        }
+      ],
+      "transactions": [
+        {
+          "portfolio": "ils",
+          "ts": "2026-09-23T07:57:45Z",
+          "side": "BUY",
+          "symbol": "TEVA.TA",
+          "qty": 3.352892,
+          "price": 119.3,
+          "notional": 400,
+          "reason": "Planned 40% sleeve; liquid dual-listed healthcare exposure. First fresh TASE session quote of round 2."
+        },
+        {
+          "portfolio": "ils",
+          "ts": "2026-09-23T07:57:45Z",
+          "side": "BUY",
+          "symbol": "NICE.TA",
+          "qty": 0.854214,
+          "price": 351.2,
+          "notional": 300,
+          "reason": "Planned 30% sleeve; concentrated technology exposure. First fresh TASE session quote of round 2."
+        },
+        {
+          "portfolio": "ils",
+          "ts": "2026-09-23T07:57:45Z",
+          "side": "BUY",
+          "symbol": "TASE.TA",
+          "qty": 2.04918,
+          "price": 146.4,
+          "notional": 300,
+          "reason": "Planned 30% sleeve; exchange-volume exposure. First fresh TASE session quote of round 2."
+        }
+      ]
     }
   ]
 }
