@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-21T19:08:35Z",
+  "updated_at": "2026-09-22T20:00:00Z",
   "rounds": [
     {
       "id": "round-1",
@@ -1497,7 +1497,7 @@
           "qty": 0.273422,
           "price": 731.47,
           "notional": 200,
-          "reason": "Same-day momentum paper trade after regular-session QQQ confirmation; must close before today’s market close.",
+          "reason": "Same-day momentum paper trade after regular-session QQQ confirmation; must close before today\u2019s market close.",
           "ts": "2026-09-21T13:46:56Z"
         },
         {
@@ -1585,6 +1585,22 @@
             }
           },
           "note": "Day QQQ closed with +2.71 realized; remaining $100 swing cash entered AMZN."
+        },
+        {
+          "ts": "2026-09-22T20:00:00Z",
+          "values": {
+            "usd": {
+              "equity": 1015.19,
+              "pnl": 15.19,
+              "pnl_pct": 1.519
+            },
+            "ils": {
+              "equity": 1000,
+              "pnl": 0,
+              "pnl_pct": 0
+            }
+          },
+          "note": "Sep 22 US close: QQQ 747.46, NVDA 228.87, AMZN 254.98. No invalidation. TASE still cash (source stale)."
         }
       ],
       "results": null,
@@ -1593,4 +1609,4 @@
       }
     }
   ]
-}
+            }
