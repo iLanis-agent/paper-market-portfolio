@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T19:08:35Z",
+  "updated_at": "2026-09-22T20:00:00Z",
   "label": "PAPER PORTFOLIO - SIMULATION ONLY",
   "round": 2,
   "round_started_at": "2026-09-20T17:09:06Z",
@@ -16,7 +16,7 @@
       "target_date": "2026-09-27",
       "target_note": "High-risk stretch goal, not a forecast. Swing budget $800; day-trading budget $200. Day trades must close the same session.",
       "pricing_note": "Day sleeve closed before the US market close. Paper marks exclude spread, slippage, fees and tax.",
-      "market_state_summary": "US regular session: day sleeve closed; QQQ, NVDA and AMZN swing positions open; equity $1011.75, P&L $+11.75",
+      "market_state_summary": "US closed. Marked at Sep 22 regular-session close; no invalidation touched (session lows QQQ 741.00, NVDA 226.50, AMZN 253.79).",
       "sleeves": [
         {
           "id": "swing",
@@ -82,13 +82,13 @@
           "name": "Invesco QQQ Trust",
           "qty": 0.546844,
           "avg_price": 731.47,
-          "last_price": 741.379,
-          "price_as_of": "2026-09-21T19:08:35Z",
-          "market_value": 405.42,
-          "unrealized_pl": 5.42,
+          "last_price": 747.46,
+          "price_as_of": "2026-09-22T20:00:00Z",
+          "market_value": 408.74,
+          "unrealized_pl": 8.74,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?interval=1m&range=1d&includePrePost=true",
           "risk": "Exit below 715.08; first target 730 passed, next target 736.",
-          "market_state": "regular market"
+          "market_state": "Sep 22 regular-session close"
         },
         {
           "sleeve": "swing",
@@ -96,13 +96,13 @@
           "name": "NVIDIA",
           "qty": 1.334431,
           "avg_price": 224.815,
-          "last_price": 227.53,
-          "price_as_of": "2026-09-21T19:08:35Z",
-          "market_value": 303.62,
-          "unrealized_pl": 3.62,
+          "last_price": 228.87,
+          "price_as_of": "2026-09-22T20:00:00Z",
+          "market_value": 305.41,
+          "unrealized_pl": 5.41,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?interval=1m&range=1d&includePrePost=true",
           "risk": "Exit below 218.03; QQQ confirmation required.",
-          "market_state": "regular market"
+          "market_state": "Sep 22 regular-session close"
         },
         {
           "sleeve": "swing",
@@ -110,13 +110,13 @@
           "name": "Amazon",
           "qty": 0.385639,
           "avg_price": 259.31,
-          "last_price": 259.31,
-          "price_as_of": "2026-09-21T19:08:35Z",
-          "market_value": 100,
-          "unrealized_pl": 0,
+          "last_price": 254.98,
+          "price_as_of": "2026-09-22T20:00:00Z",
+          "market_value": 98.33,
+          "unrealized_pl": -1.67,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?interval=1m&range=1d&includePrePost=true",
           "risk": "Exit below 251.88.",
-          "market_state": "regular market"
+          "market_state": "Sep 22 regular-session close"
         }
       ],
       "transactions": [
@@ -147,7 +147,7 @@
           "qty": 0.273422,
           "price": 731.47,
           "notional": 200,
-          "reason": "Same-day momentum paper trade after regular-session QQQ confirmation; must close before today’s market close.",
+          "reason": "Same-day momentum paper trade after regular-session QQQ confirmation; must close before today\u2019s market close.",
           "ts": "2026-09-21T13:46:56Z"
         },
         {
@@ -176,7 +176,7 @@
       "id": "ils",
       "label": "TASE ROUND 2 PAPER PORTFOLIO",
       "currency": "ILS",
-      "symbol": "₪",
+      "symbol": "\u20aa",
       "starting_cash": 1000,
       "cash": 1000,
       "target": 2000,
