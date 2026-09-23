@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-23T13:01:41Z",
+  "updated_at": "2026-09-23T14:42:59Z",
   "rounds": [
     {
       "id": "round-1",
@@ -1549,6 +1549,28 @@
           "price": 146.4,
           "notional": 300,
           "reason": "Planned 30% sleeve; exchange-volume exposure. First fresh TASE session quote of round 2."
+        },
+        {
+          "portfolio": "usd",
+          "ts": "2026-09-23T14:42:59Z",
+          "sleeve": "swing",
+          "side": "SELL",
+          "symbol": "AMZN",
+          "qty": 0.385639,
+          "price": 249.08,
+          "notional": 96.05,
+          "reason": "Invalidation exit: AMZN broke below 251.88 in the Sep 23 regular session (low 248.19). Filled at the live price when checked, not at the stop level. Realized -3.95."
+        },
+        {
+          "portfolio": "usd",
+          "ts": "2026-09-23T14:42:59Z",
+          "sleeve": "swing",
+          "side": "SELL SHORT",
+          "symbol": "AMZN",
+          "qty": 0.385619,
+          "price": 249.08,
+          "notional": 96.05,
+          "reason": "Digest AMZN short trigger: below 251.88 during regular trading. Invalid on reclaim above 255.43."
         }
       ],
       "marks": [
@@ -1711,6 +1733,22 @@
             }
           },
           "note": "TASE hourly mark: TEVA 119.40, NICE 353.70, TASE 146.30. USD unchanged (US closed)."
+        },
+        {
+          "ts": "2026-09-23T14:42:59Z",
+          "values": {
+            "usd": {
+              "equity": 1004.68,
+              "pnl": 4.68,
+              "pnl_pct": 0.468
+            },
+            "ils": {
+              "equity": 1015.55,
+              "pnl": 15.55,
+              "pnl_pct": 1.555
+            }
+          },
+          "note": "AMZN long invalidated (<251.88), exited @ 249.08 and flipped to digest short. QQQ 739.63, NVDA 225.91, TEVA ₪120.60, NICE ₪363.10, TASE ₪146.90."
         }
       ],
       "results": null,
@@ -1719,4 +1757,4 @@
       }
     }
   ]
-        }
+            }
