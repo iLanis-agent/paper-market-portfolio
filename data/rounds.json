@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-23T07:57:45Z",
+  "updated_at": "2026-09-23T08:57:26Z",
   "rounds": [
     {
       "id": "round-1",
@@ -1647,6 +1647,22 @@
             }
           },
           "note": "TASE fresh quotes: opened TEVA ₪400, NICE ₪300, TASE ₪300. USD unchanged from Sep 22 close (US market closed)."
+        },
+        {
+          "ts": "2026-09-23T08:57:26Z",
+          "values": {
+            "usd": {
+              "equity": 1015.19,
+              "pnl": 15.19,
+              "pnl_pct": 1.519
+            },
+            "ils": {
+              "equity": 1000.01,
+              "pnl": 0.01,
+              "pnl_pct": 0.001
+            }
+          },
+          "note": "TASE hourly mark: TEVA 119.20, NICE 350.90, TASE 146.70. USD unchanged (US closed)."
         }
       ],
       "results": null,
@@ -1655,4 +1671,4 @@
       }
     }
   ]
-    }
+            }
