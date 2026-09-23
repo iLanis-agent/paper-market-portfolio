@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T13:01:41Z",
+  "updated_at": "2026-09-23T14:42:59Z",
   "label": "PAPER PORTFOLIO - SIMULATION ONLY",
   "round": 2,
   "round_started_at": "2026-09-20T17:09:06Z",
@@ -16,7 +16,7 @@
       "target_date": "2026-09-27",
       "target_note": "High-risk stretch goal, not a forecast. Swing budget $800; day-trading budget $200. Day trades must close the same session.",
       "pricing_note": "Day sleeve closed before the US market close. Paper marks exclude spread, slippage, fees and tax.",
-      "market_state_summary": "US closed. Marked at Sep 22 regular-session close; no invalidation touched (session lows QQQ 741.00, NVDA 226.50, AMZN 253.79).",
+      "market_state_summary": "US regular session: AMZN long stopped out below 251.88 and flipped to the digest short (invalid >255.43); QQQ/NVDA held. Equity $1,004.68, P&L $+4.68.",
       "sleeves": [
         {
           "id": "swing",
@@ -82,13 +82,13 @@
           "name": "Invesco QQQ Trust",
           "qty": 0.546844,
           "avg_price": 731.47,
-          "last_price": 747.46,
-          "price_as_of": "2026-09-22T20:00:00Z",
-          "market_value": 408.74,
-          "unrealized_pl": 8.74,
+          "last_price": 739.63,
+          "price_as_of": "2026-09-23T14:42:51Z",
+          "market_value": 404.46,
+          "unrealized_pl": 4.46,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?interval=1m&range=1d&includePrePost=true",
           "risk": "Exit below 715.08; first target 730 passed, next target 736.",
-          "market_state": "Sep 22 regular-session close"
+          "market_state": "regular market"
         },
         {
           "sleeve": "swing",
@@ -96,27 +96,28 @@
           "name": "NVIDIA",
           "qty": 1.334431,
           "avg_price": 224.815,
-          "last_price": 228.87,
-          "price_as_of": "2026-09-22T20:00:00Z",
-          "market_value": 305.41,
-          "unrealized_pl": 5.41,
+          "last_price": 225.91,
+          "price_as_of": "2026-09-23T14:42:58Z",
+          "market_value": 301.46,
+          "unrealized_pl": 1.46,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?interval=1m&range=1d&includePrePost=true",
           "risk": "Exit below 218.03; QQQ confirmation required.",
-          "market_state": "Sep 22 regular-session close"
+          "market_state": "regular market"
         },
         {
           "sleeve": "swing",
           "symbol": "AMZN",
-          "name": "Amazon",
-          "qty": 0.385639,
-          "avg_price": 259.31,
-          "last_price": 254.98,
-          "price_as_of": "2026-09-22T20:00:00Z",
-          "market_value": 98.33,
-          "unrealized_pl": -1.67,
+          "name": "Amazon (SHORT)",
+          "side": "SHORT",
+          "qty": 0.385619,
+          "avg_price": 249.08,
+          "last_price": 249.08,
+          "price_as_of": "2026-09-23T14:42:59Z",
+          "market_value": 96.05,
+          "unrealized_pl": 0,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?interval=1m&range=1d&includePrePost=true",
-          "risk": "Exit below 251.88.",
-          "market_state": "Sep 22 regular-session close"
+          "risk": "Short. Exit on reclaim above 255.43. Market value shown = collateral + unrealized P&L.",
+          "market_state": "regular market"
         }
       ],
       "transactions": [
@@ -169,6 +170,28 @@
           "price": 259.31,
           "notional": 100,
           "reason": "AMZN long trigger confirmed above 255.43 during regular trading; exit below 251.88."
+        },
+        {
+          "portfolio": "usd",
+          "ts": "2026-09-23T14:42:59Z",
+          "sleeve": "swing",
+          "side": "SELL",
+          "symbol": "AMZN",
+          "qty": 0.385639,
+          "price": 249.08,
+          "notional": 96.05,
+          "reason": "Invalidation exit: AMZN broke below 251.88 in the Sep 23 regular session (low 248.19). Filled at the live price when checked, not at the stop level. Realized -3.95."
+        },
+        {
+          "portfolio": "usd",
+          "ts": "2026-09-23T14:42:59Z",
+          "sleeve": "swing",
+          "side": "SELL SHORT",
+          "symbol": "AMZN",
+          "qty": 0.385619,
+          "price": 249.08,
+          "notional": 96.05,
+          "reason": "Digest AMZN short trigger: below 251.88 during regular trading. Invalid on reclaim above 255.43."
         }
       ]
     },
@@ -183,7 +206,7 @@
       "target_date": "2026-09-27",
       "target_note": "High-risk stretch goal, not a forecast. Tracked separately from USD.",
       "pricing_note": "Fresh TASE session quotes returned Sep 23; planned 40/30/30 allocation filled at live prices. Marks exclude spread, fees and tax.",
-      "market_state_summary": "TASE open: marked 2026-09-23T13:01:41Z; equity ₪1,002.28, P&L ₪+2.28.",
+      "market_state_summary": "TASE marked at latest quotes; equity ₪1,015.55, P&L ₪+15.55.",
       "watchlist": [
         {
           "symbol": "TEVA.TA",
@@ -210,10 +233,10 @@
           "name": "Teva",
           "qty": 3.352892,
           "avg_price": 119.3,
-          "last_price": 119.4,
-          "price_as_of": "2026-09-23T13:01:18Z",
-          "market_value": 400.34,
-          "unrealized_pl": 0.34,
+          "last_price": 120.6,
+          "price_as_of": "2026-09-23T14:26:48Z",
+          "market_value": 404.36,
+          "unrealized_pl": 4.36,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TEVA.TA?interval=1m&range=1d",
           "market_state": "TASE regular session"
         },
@@ -222,10 +245,10 @@
           "name": "NICE",
           "qty": 0.854214,
           "avg_price": 351.2,
-          "last_price": 353.7,
-          "price_as_of": "2026-09-23T13:01:13Z",
-          "market_value": 302.14,
-          "unrealized_pl": 2.14,
+          "last_price": 363.1,
+          "price_as_of": "2026-09-23T14:27:06Z",
+          "market_value": 310.17,
+          "unrealized_pl": 10.17,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NICE.TA?interval=1m&range=1d",
           "market_state": "TASE regular session"
         },
@@ -234,10 +257,10 @@
           "name": "Tel Aviv Stock Exchange",
           "qty": 2.04918,
           "avg_price": 146.4,
-          "last_price": 146.3,
-          "price_as_of": "2026-09-23T13:01:41Z",
-          "market_value": 299.8,
-          "unrealized_pl": -0.2,
+          "last_price": 146.9,
+          "price_as_of": "2026-09-23T14:26:48Z",
+          "market_value": 301.02,
+          "unrealized_pl": 1.02,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TASE.TA?interval=1m&range=1d",
           "market_state": "TASE regular session"
         }
