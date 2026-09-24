@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-24T11:58:14Z",
+  "updated_at": "2026-09-24T12:58:01Z",
   "rounds": [
     {
       "id": "round-1",
@@ -1893,6 +1893,22 @@
             }
           },
           "note": "Hourly mark: TEVA.TA 117.80, NICE.TA 351.40, TASE.TA 142.90. USD unchanged (US closed)."
+        },
+        {
+          "ts": "2026-09-24T12:58:01Z",
+          "values": {
+            "usd": {
+              "equity": 1004.95,
+              "pnl": 4.95,
+              "pnl_pct": 0.495
+            },
+            "ils": {
+              "equity": 986.22,
+              "pnl": -13.78,
+              "pnl_pct": -1.378
+            }
+          },
+          "note": "Hourly mark: TEVA.TA 117.50, NICE.TA 352.70, TASE.TA 142.00. USD unchanged (US closed)."
         }
       ],
       "results": null,
@@ -1901,4 +1917,4 @@
       }
     }
   ]
-        }
+}
