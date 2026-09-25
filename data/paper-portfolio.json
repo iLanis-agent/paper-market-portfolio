@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T20:00:01Z",
+  "updated_at": "2026-09-25T14:14:28Z",
   "label": "PAPER PORTFOLIO - SIMULATION ONLY",
   "round": 2,
   "round_started_at": "2026-09-20T17:09:06Z",
@@ -16,7 +16,7 @@
       "target_date": "2026-09-27",
       "target_note": "High-risk stretch goal, not a forecast. Swing budget $800; day-trading budget $200. Day trades must close the same session.",
       "pricing_note": "Day sleeve closed before the US market close. Paper marks exclude spread, slippage, fees and tax.",
-      "market_state_summary": "US regular session mark 2026-09-24T20:00:01Z; equity $1,003.60, P&L $+3.60.",
+      "market_state_summary": "US regular session mark 2026-09-25T14:14:28Z; equity $1,003.99, P&L $+3.99.",
       "sleeves": [
         {
           "id": "swing",
@@ -47,8 +47,8 @@
           "side": "LONG",
           "trigger": 898.4,
           "invalidation": 890.55,
-          "status": "WAIT UNTIL THURSDAY EARNINGS",
-          "note": "Post-report only."
+          "status": "TRIGGERED POST-EARNINGS - NO SWING CASH",
+          "note": "Post-Thursday earnings regular-session quote above 898.40 on Sep 25; no swing cash available. No entry."
         },
         {
           "symbol": "NVDA",
@@ -63,8 +63,8 @@
           "side": "LONG",
           "trigger": 255.43,
           "invalidation": 251.88,
-          "status": "TRIGGERED - SWING OPEN",
-          "note": "Alternative short below 251.88; reclaim above 255.43 invalidates short."
+          "status": "LONG INVALIDATED - SHORT OPEN",
+          "note": "Short below 251.88 active; exit on reclaim above 255.43."
         },
         {
           "symbol": "META",
@@ -82,10 +82,10 @@
           "name": "Invesco QQQ Trust",
           "qty": 0.546844,
           "avg_price": 731.47,
-          "last_price": 741.1,
-          "price_as_of": "2026-09-24T20:00:00Z",
-          "market_value": 405.27,
-          "unrealized_pl": 5.27,
+          "last_price": 741.24,
+          "price_as_of": "2026-09-25T14:14:28Z",
+          "market_value": 405.34,
+          "unrealized_pl": 5.34,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?interval=1m&range=1d&includePrePost=true",
           "risk": "Exit below 715.08; first target 730 passed, next target 736.",
           "market_state": "regular market"
@@ -96,10 +96,10 @@
           "name": "NVIDIA",
           "qty": 1.334431,
           "avg_price": 224.815,
-          "last_price": 224.58,
-          "price_as_of": "2026-09-24T20:00:01Z",
-          "market_value": 299.69,
-          "unrealized_pl": -0.31,
+          "last_price": 224.31,
+          "price_as_of": "2026-09-25T14:14:28Z",
+          "market_value": 299.33,
+          "unrealized_pl": -0.67,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?interval=1m&range=1d&includePrePost=true",
           "risk": "Exit below 218.03; QQQ confirmation required.",
           "market_state": "regular market"
@@ -111,10 +111,10 @@
           "side": "SHORT",
           "qty": 0.385619,
           "avg_price": 249.08,
-          "last_price": 249.38,
-          "price_as_of": "2026-09-24T20:00:01Z",
-          "market_value": 95.93,
-          "unrealized_pl": -0.12,
+          "last_price": 247.62,
+          "price_as_of": "2026-09-25T14:14:27Z",
+          "market_value": 96.61,
+          "unrealized_pl": 0.56,
           "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?interval=1m&range=1d&includePrePost=true",
           "risk": "Short. Exit on reclaim above 255.43. Market value shown = collateral + unrealized P&L.",
           "market_state": "regular market"
