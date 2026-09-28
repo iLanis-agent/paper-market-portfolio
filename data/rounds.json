@@ -1478,7 +1478,8 @@
           "price": 731.47,
           "notional": 400,
           "reason": "Sep 20 QQQ long trigger confirmed above 721.73 during regular trading; first target 730 already passed, next target 736; exit below 715.08.",
-          "ts": "2026-09-21T13:46:56Z"
+          "ts": "2026-09-21T13:46:56Z",
+          "portfolio": "usd"
         },
         {
           "sleeve": "swing",
@@ -1488,7 +1489,8 @@
           "price": 224.815,
           "notional": 300,
           "reason": "NVDA crossed 222.73 with QQQ simultaneously confirmed above 721.73; exit below 218.03.",
-          "ts": "2026-09-21T13:46:56Z"
+          "ts": "2026-09-21T13:46:56Z",
+          "portfolio": "usd"
         },
         {
           "sleeve": "day",
@@ -1498,7 +1500,8 @@
           "price": 731.47,
           "notional": 200,
           "reason": "Same-day momentum paper trade after regular-session QQQ confirmation; must close before today’s market close.",
-          "ts": "2026-09-21T13:46:56Z"
+          "ts": "2026-09-21T13:46:56Z",
+          "portfolio": "usd"
         },
         {
           "ts": "2026-09-21T19:08:35Z",
@@ -1508,7 +1511,8 @@
           "qty": 0.273422,
           "price": 741.379,
           "notional": 202.71,
-          "reason": "Required same-session close before the US market close; realized paper gain."
+          "reason": "Required same-session close before the US market close; realized paper gain.",
+          "portfolio": "usd"
         },
         {
           "ts": "2026-09-21T19:08:35Z",
@@ -1518,7 +1522,8 @@
           "qty": 0.385639,
           "price": 259.31,
           "notional": 100,
-          "reason": "AMZN long trigger confirmed above 255.43 during regular trading; exit below 251.88."
+          "reason": "AMZN long trigger confirmed above 255.43 during regular trading; exit below 251.88.",
+          "portfolio": "usd"
         },
         {
           "portfolio": "ils",
