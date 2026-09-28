@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-28T17:22:12Z",
+  "updated_at": "2026-09-28T18:16:51Z",
   "rounds": [
     {
       "id": "round-1",
@@ -2405,6 +2405,22 @@
             }
           },
           "note": "Hourly mark: QQQ 737.90, NVDA 230.69, AMZN short 247.05. TASE unchanged (Yahoo feed stale; latest clean mark 14:01 IDT)."
+        },
+        {
+          "ts": "2026-09-28T18:16:51Z",
+          "values": {
+            "usd": {
+              "equity": 1010.7,
+              "pnl": 10.7,
+              "pnl_pct": 1.07
+            },
+            "ils": {
+              "equity": 976.89,
+              "pnl": -23.11,
+              "pnl_pct": -2.311
+            }
+          },
+          "note": "Hourly mark: QQQ 738.44, NVDA 230.34, AMZN short 247.10. TASE unchanged (Yahoo feed stale; latest clean mark 14:01 IDT)."
         }
       ],
       "results": null,
