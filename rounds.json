@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-29T15:17:38Z",
+  "updated_at": "2026-09-29T16:17:39Z",
   "rounds": [
     {
       "id": "round-1",
@@ -2540,12 +2540,12 @@
           "note": "Hourly mark: TEVA.TA 119.80, NICE.TA 337.80, TASE.TA 139.00. USD unchanged (US closed)."
         },
         {
-          "ts": "2026-09-29T15:17:38Z",
+          "ts": "2026-09-29T16:17:39Z",
           "values": {
             "usd": {
-              "equity": 1011.4,
-              "pnl": 11.4,
-              "pnl_pct": 1.14
+              "equity": 1009.84,
+              "pnl": 9.84,
+              "pnl_pct": 0.984
             },
             "ils": {
               "equity": 975.07,
@@ -2553,7 +2553,7 @@
               "pnl_pct": -2.493
             }
           },
-          "note": "Hourly mark: QQQ 738.21, NVDA 230.69, AMZN short 246.23. TASE unchanged (Yahoo feed stale; latest clean mark 14:01 IDT)."
+          "note": "Hourly mark: QQQ 736.72, NVDA 230.26, AMZN short 246.64. TASE unchanged (Yahoo feed stale; latest clean mark 14:01 IDT)."
         }
       ],
       "results": null,
